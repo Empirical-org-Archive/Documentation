@@ -1,3 +1,9 @@
 {
-  "Compass": {}
+  "Compass": {
+    "Installation.md": {
+      "name": "Installation Guide",
+      "created": 1400535448588,
+      "path": ""
+    }
+  }
 }
