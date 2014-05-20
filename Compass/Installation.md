@@ -23,6 +23,8 @@ on how to improve Quill, or just want to help, please join us!
 
 Read our [guide to contributing](https://github.com/empirical-org/quill/blob/master/CONTRIBUTING.md) for more information.
 
+Here is a great piece of info. 
+
 Building
 --------
 
