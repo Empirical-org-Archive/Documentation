@@ -1,7 +1,5 @@
-# Who loves markdown?
+#Glossary
 
+This document outlines all of the terminology used in Compass. 
 
-An Activity Session is the amount of time a student spends on a lesson.
-
-
-At a future point, we can all edit this together. 
+This is an empty document, and we will fill it in later. 
