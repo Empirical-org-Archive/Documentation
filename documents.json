@@ -36,5 +36,11 @@
       "updated": 1400883439708
     }
   },
-  "Cofactor": {}
+  "Cofactor": {
+    "Provisioning-A-Cofactor-Team.md": {
+      "name": "Provisioning a Cofactor Team",
+      "created": 1400892391345,
+      "path": ""
+    }
+  }
 }
