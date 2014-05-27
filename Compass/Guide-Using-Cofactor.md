@@ -54,4 +54,6 @@ We use Google Drive as our file storage system. Everything in the folder "Empiri
 
 You can also sync all of the files with your computer via the Google Drive desktop application. Download the application, and then download the entire Empirical Shared Files folder to your Google Drive. You can also sync a single folder by downloading that folder to your Google Drive folder. 
 
+<!---View the raw file at: https://docs.google.com/a/quill.org/document/d/1GI0SzJMI_xKXQFRmMU3Jn-2A_BtXszqQNvO11okKKnU/edit?usp=sharing--->
+
 
