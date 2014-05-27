@@ -1,6 +1,15 @@
 #Guide: Using Cofactor
 *Cofactor bundles together some of the best collaboration tools on the internet. Many of these tools are built ontop of GitHub, and you'll need a GitHub account to take advantage of these tools.*
 
+## User Note: Outstanding Bugs
+
+**Cofactor relies upon a number of services. You will need to sign into each service, using GitHub or Google, to access each of these features.** Cofactor is still in its prototype phase, and there a number of bugs. For example, when signing into a new service, you may need to open the service in a new window, as you will not be able to sign in through Cofactor.
+
+Some of our services, upon signing in, may re-direct to you another page. The solution is simply to re-enter the url [http://empirical.org/cofactor](http://empirical.org/cofactor). 
+
+Once you are signed into every service, it should be easy to use Cofactor. If you run into issues, please add them to the Cofactor issue tracker page.  
+
+
 ## Issues Tracker
 All of our projects and tasks are arranged into issues. **Anyone may propose or complete an issue.** Issues are categorized by completion level, time commitment, project type, etc. This section explains how we categorize issues, so that you can jump into issues you're interested in.
 
