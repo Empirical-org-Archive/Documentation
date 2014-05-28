@@ -1,6 +1,6 @@
 # Contributor Questions
 
-*This document outlines common questions about contributing to Quill. Please add your questions below, and they will be answered by a project maintainer. 
+*This document outlines common questions about contributing to Quill. Please add your questions below, and they will be answered by a project maintainer.* 
 
 ### Is Quill a nonprofit organization?
 Yes, Quill is a nonprofit, open source organization. We have applied for our 501(c)3 status, and we are currently waiting for our status to be confirmed. 
