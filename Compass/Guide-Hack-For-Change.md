@@ -23,7 +23,7 @@ Empirical is arranged into Cofactor teams.
 ### Quill Activities Team 
 *We currently feature 2 types of activities, with a total of 150 lessons.*
 
-View [the Quill Activities Team.](www.goal.com) View [the Milestone.](www.goal.com)
+View [the Quill Activities Team.](http://goal.com) View [the Milestone.](www.goal.com)
 1. **GitHub as a CMS.** We host all of our lessons as text files in GitHub. Users can create and edit lessons via pull requests. The content is written to the database via headers. The Milestone. 
 2. **Review API Design.**
 <br>
@@ -38,14 +38,14 @@ View the Milestone.
 1. **Compass Interface Upgrades.** There a series of fixes that need to be made to Compass. This is a good team for less experienced developers. The Milestone. 
 
 
-## Community Engagement Team
+### Community Engagement Team
 *The Community Engagement team builds tools and pages to connect to the commmunity.*
 
 View the Community Engagement Team. The Milestone.
 1. **Interactive Footer.** The goal of the interactive footer is to engage users by enabling users to post ideas and share via social media. The issue.
 
 
-## Cofactor Team
+### Cofactor Team
 *Cofactor is our engine for collaboartively building open source education.*
 
 View the Cofactor Team.
