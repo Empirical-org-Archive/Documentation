@@ -23,11 +23,12 @@ Empirical is arranged into Cofactor teams.
 ### Quill Activities Team 
 *We currently feature 2 types of activities, with a total of 150 lessons.*
 
-View the Quill Activities Team. View the Milestone.
+View [the Quill Activities Team.](www.goal.com) View [the Milestone.](www.goal.com)
 1. **GitHub as a CMS.** We host all of our lessons as text files in GitHub. Users can create and edit lessons via pull requests. The content is written to the database via headers. The Milestone. 
 2. **Review API Design.**
 <br>
-<p>
+<br>
+<br>
 
 ### Compass Team
 *Compass is our interface for assinging lessons and viewing results.*
