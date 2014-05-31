@@ -24,26 +24,21 @@ Empirical is arranged into Cofactor teams.
 ### Quill Activities Team 
 *We currently feature 2 types of activities, with a total of 150 lessons.*
 
-View (the Quill Activities Team.)[www.goal.com] View [the Milestone.](https://github.com/empirical-org/Compass/issues?milestone=12&page=1&state=open)
-1. **GitHub as a CMS.** We host all of our lessons as text files in GitHub. Users can create and edit lessons via pull requests. The content is written to the database via headers. The Milestone. 
-2. **Review API Design.**
-<br>
-<br>
-<br>
-
 ### Compass Team
 *Compass is our interface for assinging lessons and viewing results.*
 
-View the Compass Team. 
-View the Milestone.
-1. **Compass Interface Upgrades.** There is a series of fixes that need to be made to Compass and Quill. This is a good team for less experienced developers. The Milestone. 
+[View the Compass Team.](http://www.empirical.org/cofactor/teams/compass) 
+[View the Milestone.](https://github.com/empirical-org/Compass/issues?milestone=12&page=1&state=open)
+1. **Compass Interface Upgrades.** There is a series of fixes that need to be made to Compass and Quill. This is a good team for less experienced developers. The Milestone.
+2. **GitHub as a CMS.** We host all of our lessons as text files in GitHub. Users can create and edit lessons via pull requests. The content is written to the database via headers. [The issue.](https://github.com/empirical-org/Compass/issues/230)
+3. **Review API Design.**
 
 
-## Community Engagement Team
-*The Community Engagement team builds tools and pages to connect to the commmunity.*
+## Design and Homepage Team
+*The Design and Homepage team builds tools and pages to connect to the commmunity.*
 
-View the Community Engagement Team. The Milestone.
-1. **Interactive Footer.** The goal of the interactive footer is to engage users by enabling users to post ideas and share via social media. The issue.
+View the Design and Homepage team. 
+1. **Interactive Footer.** The goal of the interactive footer is to engage users by enabling users to post ideas and share via social media. [The issue.](https://github.com/empirical-org/Compass/issues/227)
 
 
 ## Cofactor Team
