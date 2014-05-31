@@ -4,7 +4,8 @@
 
 We are currently building **Quill**, a web application that provides interactive writing activities for students. There are currently 10,000 students using our site. Read about our mission [here](http://www.quill.org/mission). 
 
-**Cofactor** is a 
+**Cofactor** is **Empirical's** collaboration platform. Cofactor bundles together some of the best collaboration tools on the internet. Many of these tools are built ontop of GitHub, and you'll need a GitHub account to take advantage of these tools.
+
 
 
 ## Getting Started
