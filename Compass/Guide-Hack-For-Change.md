@@ -2,9 +2,9 @@
 
 [**Empirical**](http://empirical.org) is a nonprofit, open source community that builds interactive education. 
 
-We are currently building [**Quill**](http://quill.org), a web application that provides interactive writing activities for students 
+We are currently building [**Quill**](http://quill.org), a web application that provides interactive writing activities for students.
 
-[Our mission is to make students active players in their education.](http://www.quill.org/mission). 
+[Our mission is to make students active players in their education.](http://www.quill.org/mission)
 
 [**Cofactor**](http://empirical.org/cofactor) is a tool for collaboartively developing open source projects. We manage all of our projects through Cofactor. 
 
