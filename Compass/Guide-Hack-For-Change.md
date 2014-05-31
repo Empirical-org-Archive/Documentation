@@ -1,10 +1,12 @@
 # Thank you for hacking Quill
 
-**Empirical** is a nonprofit, open source community that builds interactive education. 
+[**Empirical**](http://empirical.org) is a nonprofit, open source community that builds interactive education. 
 
-We are currently building **Quill**, a web application that provides interactive writing activities for students. There are currently 10,000 students using our site. Read about our mission [here](http://www.quill.org/mission). 
+We are currently building [**Quill**](http://quill.org), a web application that provides interactive writing activities for students 
 
-**Cofactor** is a 
+[Read about our mission.](http://www.quill.org/mission). 
+
+[**Cofactor**](http://empirical.org/cofactor) is a tool for collaboartively developing open source projects. We manage all of our projects through Cofactor. 
 
 
 ## Getting Started
@@ -22,15 +24,19 @@ We are currently building **Quill**, a web application that provides interactive
 
 [View the Compass Team.](http://www.empirical.org/cofactor/teams/compass) 
 [View the Milestone.](https://github.com/empirical-org/Compass/issues?milestone=12&page=1&state=open)
+
 1. **Compass Interface Upgrades.** There is a series of fixes that need to be made to Compass and Quill. This is a good team for less experienced developers. [The Milestone.](https://github.com/empirical-org/Compass/issues?milestone=12&page=1&state=open)
+
 2. **GitHub as a CMS.** We host all of our lessons as text files in GitHub. Users can create and edit lessons via pull requests. The content is written to the database via headers. [The issue.](https://github.com/empirical-org/Compass/issues/230)
-3. **Review API Design.**
+
+3. **Review API Design.** We recently launched an API, and 
 
 
 ### Design and Homepage Team
 *The Design and Homepage team builds tools and pages to connect to the commmunity.*
 
 [View the Design and Homepage team.](http://www.empirical.org/cofactor/teams/design-homepage) 
+
 1. **Interactive Footer.** The goal of the interactive footer is to engage users by enabling users to post ideas and share via social media. [The issue.](https://github.com/empirical-org/Compass/issues/227)
 
 
@@ -50,13 +56,6 @@ We are currently building **Quill**, a web application that provides interactive
 
 ### Dev Ops & Testing
 
-1. Set up 
-2. 
-3. 
-4. Set up Vagrent
-
-Core Infrastructure
-Docker Setup
-Integration Testing Review, w/ Documentation, 
-
-Review Vagrant Installation.  
+1. Complete Docker Integration
+2. Set up Vagrant With Docker
+3. Integration Testing Review, w/ Documentation.
