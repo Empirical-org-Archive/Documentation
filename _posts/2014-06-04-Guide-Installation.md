@@ -1,4 +1,10 @@
-# Welcome to Quill!
+---
+layout: post
+title:  "Installation Guide"
+date:   2014-06-04 10:39:56
+categories: doc
+---
+
 
 Quill is an open platform for providing interactive grammar lessons.
 

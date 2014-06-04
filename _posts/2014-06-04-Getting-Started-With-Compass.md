@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Getting started with Compass"
+date:   2014-06-04 10:39:56
+categories: doc
+---
+
+
 # How can I help with Quill? 
 
 Below are some areas of the site where we are currently seeking contributions. If any seem of interest please send an email to hello@quill.org and we'll arrange a time to chat about getting started. 

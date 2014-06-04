@@ -1,4 +1,9 @@
-  
+---
+layout: post
+title:  "Provisioning a Cofactor team"
+date:   2014-06-04 10:39:56
+categories: post
+---
   
 
 *Overview: Cofactor bundles together a number of services. To set up a Cofactor team, you'll need to set up each of these services. This document outlines how to set up each of these services.*
@@ -7,8 +12,7 @@
 *Go to [Cofactor on GitHub](https://github.com/empirical-org/cofactor) to install Cofactor.*
   
   
-# Provisioning Steps for a Cofactor team
-  
+ 
 ## 1. Google Groups Setup
 Create a new google group for each forum. 
   

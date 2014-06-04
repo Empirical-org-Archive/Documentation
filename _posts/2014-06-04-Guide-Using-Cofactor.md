@@ -1,4 +1,10 @@
-#Guide: Using Cofactor
+---
+layout: post
+title:  "Using Cofactor"
+date:   2014-06-04 10:39:56
+categories: tut
+---
+
 *Cofactor bundles together some of the best collaboration tools on the internet. Many of these tools are built ontop of GitHub, and you'll need a GitHub account to take advantage of these tools.*
 
 ## User Note: Outstanding Bugs

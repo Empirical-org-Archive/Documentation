@@ -1,4 +1,9 @@
-# Guide - QA Testing Compass
+---
+layout: post
+title:  "Compass QA Procedure"
+date:   2014-06-04 10:39:56
+categories: tut
+---
 
 ### Creating Accounts 
 1. Create New Teacher Account 

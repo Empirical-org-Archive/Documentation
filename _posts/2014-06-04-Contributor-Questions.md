@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Contributing questions!"
+date:   2014-06-04 10:39:56
+categories: doc
+---
+
 # Contributor Questions
 
 *This document outlines common questions about contributing to Quill. Please add your questions below, and they will be answered by a project maintainer.* 

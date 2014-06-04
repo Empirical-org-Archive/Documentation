@@ -1,4 +1,9 @@
-# Thank you for hacking Quill
+---
+layout: post
+title:  "Hacking for change"
+date:   2014-06-04 10:39:56
+categories: tut
+---
 
 **Empirical** is a nonprofit, open source community that builds interactive education. 
 
