@@ -23,39 +23,39 @@ Our volunteer contributors tend to be online and availabe between 5 pm and 10 pm
 ### What is your toolset?
 
 **Tech Stack**
-Ruby on Rails
-PostgresSQL
-Backbone.js
-Redis - caching the content 
+- Ruby on Rails
+- PostgresSQL
+- Backbone.js
+- Redis
 
 **Installation**
-Vagrant + VM Ware
-Docker
+- Vagrant + VM Ware
+- Docker
 
 **Hosting**
-Heroku - Site hosting
-Amazon Web Services - Hosting images and backups through S3.
-Fastly - Serves as a CDN for delivering image assets. 
-Zerigo - Point the DNS to a Domain
+- **Heroku** - Site hosting
+- **Amazon Web Services** - Hosting images and backups through S3.
+- **Fastly** - Serves as a CDN for delivering image assets. 
+- **Zerigo** - Point the DNS to a Domain
 
 **Monitoring**
-New Relic - Monitor lag spikes. 
-Sentry - Reports errors on the site. 
-Logentries - Reports errors, including timeout errors. 
-HireFire - Automatically scales the number of dynos to handle peak load times. 
-Librato - Provides info on the number of connections and latency. 
+- **New Relic** - Monitor lag spikes. 
+- **Sentry** - Reports errors on the site. 
+- **Logentries** - Reports errors, including timeout errors. 
+- **HireFire** - Automatically scales the number of dynos to handle peak load times. 
+- **Librato** - Provides info on the number of connections and latency. 
 
 **Cofactor Collaboration**
 
 *See this [guide](http://empirical-contentify.herokuapp.com/#/learn-more/Compass/Getting-Started-With-Compass.md) for a complete guide on how to collaborate.*
 
-**GitHub** - All of our code is hosted on [GitHub](https://github.com/empirical-org/).
-**Issues** - We use Huboard is visualize GitHub issues. 
-**Files** - We use Google Drive for hosting. 
-**Mailing List**  - We use Google Groups as our mailing list and question and answer forum.
-**Chat** - We use Gitter, a chat app built on top of Github.
-**Text Editor** - We use Contentify as a collaborative text editor for markdown files.
-**Google Hangouts** - Video chat.
+- **GitHub** - All of our code is hosted on [GitHub](https://github.com/empirical-org/).
+- **Issues** - We use Huboard is visualize GitHub issues. 
+- **Files** - We use Google Drive for hosting. 
+- **Mailing List**  - We use Google Groups as our mailing list and question and answer forum.
+- **Chat** - We use Gitter, a chat app built on top of Github.
+- **Text Editor** - We use Contentify as a collaborative text editor for markdown files.
+- **Google Hangouts** - Video chat.
 
 
 
