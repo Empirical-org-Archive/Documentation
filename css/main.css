@@ -1,7 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Imprima);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
-    font-family: 'Imprima';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
 }
