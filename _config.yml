@@ -1,5 +1,6 @@
 # Site title and subtitle. This is used in _includes/header.html
 title: 'Compass Doc'
+description: 'Compass is a simple LMS for assigning lessons and viewing student results. Compass seamlessly integrates 3rd party applications via the Compass API.'
 subtitle: 'A simple LMS for assigning lessons and viewing student results'
 
 # Enable/show navigation. There are there options:
