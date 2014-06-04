@@ -2,7 +2,7 @@
 title: 'Compass Doc'
 description: 'Compass is a simple LMS for assigning lessons and viewing student results. Compass seamlessly integrates 3rd party applications via the Compass API.'
 subtitle: 'A simple LMS for assigning lessons and viewing student results'
-baseurl: '/Documentation'
+
 # Enable/show navigation. There are there options:
 #   0 - always hide
 #   1 - always show
@@ -23,7 +23,7 @@ sections: [
 
 # Keep as an empty string if served up at the root. If served up at a specific
 # path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
-baseurl: ''
+baseurl: '/Documentation'
 
 # Dates are not included in permalinks
 permalink: none
