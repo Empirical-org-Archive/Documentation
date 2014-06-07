@@ -11,20 +11,12 @@
 
 
 2. Click “Sign in to the AWS Console”
-
 ![0](https://s3.amazonaws.com/Empirical-Documentation/AMI-Install/image00.png)
-
-
 3. Click “EC2 – Virtual Servers in the Cloud”
-
 ![1](https://s3.amazonaws.com/Empirical-Documentation/AMI-Install/image01.png)
-
-
 4. Make sure that you’re in the “US East (N. Virginia)” region in the top-right dropdown:
 Click “AMIs” under “Images” on the left panel.
-
 ![2](https://s3.amazonaws.com/Empirical-Documentation/AMI-Install/image02.png)
-
 5. Change “Owned by Me” to “Public Images” in the filters:
 
 
