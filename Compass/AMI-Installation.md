@@ -25,7 +25,6 @@ Click “AMIs” under “Images” on the left panel.
 
 ![2](https://s3.amazonaws.com/Empirical-Documentation/AMI-Install/image02.png)
 
-
 5. Change “Owned by Me” to “Public Images” in the filters:
 
 
