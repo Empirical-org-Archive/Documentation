@@ -11,10 +11,10 @@
 
 
 2. Click “Sign in to the AWS Console”
-3. 
+
 ![0](https://s3.amazonaws.com/Empirical-Documentation/AMI-Install/image00.png)
 3. Click “EC2 – Virtual Servers in the Cloud”
-4. 
+
 ![1](https://s3.amazonaws.com/Empirical-Documentation/AMI-Install/image01.png)
 4. Make sure that you’re in the “US East (N. Virginia)” region in the top-right dropdown:
 Click “AMIs” under “Images” on the left panel.
