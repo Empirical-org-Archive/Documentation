@@ -11,18 +11,20 @@
 
 
 2. Click “Sign in to the AWS Console”
+3. 
 ![0](https://s3.amazonaws.com/Empirical-Documentation/AMI-Install/image00.png)
 3. Click “EC2 – Virtual Servers in the Cloud”
+4. 
 ![1](https://s3.amazonaws.com/Empirical-Documentation/AMI-Install/image01.png)
 4. Make sure that you’re in the “US East (N. Virginia)” region in the top-right dropdown:
 Click “AMIs” under “Images” on the left panel.
-![2](https://s3.amazonaws.com/Empirical-Documentation/AMI-Install/image02.png)
+
+![2](https://s3.amazonaws.com/Empirical-Documentation/AMI-Install/image14.png)
+
 5. Change “Owned by Me” to “Public Images” in the filters:
+![3](https://s3.amazonaws.com/Empirical-Documentation/AMI-Install/image17.png)
 
-
-
-
-Search for the Stories With Friends AMI ID (ami-e494678c, press enter to search):
+6. Search for the Stories With Friends AMI ID (ami-e494678c, press enter to search):
 
 Click “Launch” in the top-left:
 
