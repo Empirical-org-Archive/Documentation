@@ -2,19 +2,26 @@
 
 *Introduction: Amazon will create a virtual private server for you loaded with the latest environment and code. You can hack on this code without installing the code locally.*
 
-*Note: Each repo has its own AMI key. Here are the latest keys:*
+**Note: Each repo has its own AMI key. Here are the latest keys:
+- Stories With Friends: ami-e494678c
 
 
 
 1. Go to http://aws.amazon.com/console/
+
+
+2. Click “Sign in to the AWS Console”
 ![0](https://s3.amazonaws.com/Empirical-Documentation/AMI-Install/image00.png)
 
-Click “Sign in to the AWS Console”
 
-Click “EC2 – Virtual Servers in the Cloud”
+3. Click “EC2 – Virtual Servers in the Cloud”
+![1](https://s3.amazonaws.com/Empirical-Documentation/AMI-Install/image01.png)
 
-Make sure that you’re in the “US East (N. Virginia)” region in the top-right dropdown:
-Click “AMIs” under “Images” on the left panel
+
+4. Make sure that you’re in the “US East (N. Virginia)” region in the top-right dropdown:
+Click “AMIs” under “Images” on the left panel.
+![2](https://s3.amazonaws.com/Empirical-Documentation/AMI-Install/image02.png)
+
 
 Change “Owned by Me” to “Public Images” in the filters:
 
