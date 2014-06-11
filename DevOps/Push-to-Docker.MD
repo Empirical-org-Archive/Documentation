@@ -1,4 +1,4 @@
- #How to Push Code to the Server. 
+ # How to Push Code to the Server. 
  
  1. SSH to the server.
  2. cd to the code
