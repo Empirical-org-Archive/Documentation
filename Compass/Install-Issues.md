@@ -1,16 +1,16 @@
 # Install Issues
 
--1 Insufficent Root Permissions
+#####-1 Insufficent Root Permissions
 db:migrate requires root privileges. and my rot environment is completely different. no gems, no rake, no bundle.
 
 
--2 Postgres Database
+#####-2 Postgres Database
 ok, so "postgresql-contrib" is a necessary package to get postgresql's extensions?
 
--3 Owner Issue
+#####-3 Owner Issue
 git submodule init && git submodule update
 
--4 Issue with HStore
+#####-4 Issue with HStore
 
 > ActiveRecord::StatementInvalid: 
 
@@ -20,7 +20,7 @@ git submodule init && git submodule update
 
 > : CREATE EXTENSION IF NOT EXISTS hstore
 
--5 error when migrating 
+#####-5 error when migrating 
 
 > the scheme postgres does not accept registry part: super:4Rh0izHYfmfWx9cV@:   
 
@@ -41,28 +41,28 @@ pool: 5
 > This apparently was caused because postgres superuser in database.yml was needed.
 
 
--6 User from "error when migrating" issue then got:
+#####-6 User from "error when migrating" issue then got:
 
 > pg_dump: [archiver (db)] connection to database "quill" failed: FATAL: password authentication failed for user "shubham"
 
 
--7 When user from "error when migrating" finally got the app running, it still didn't work that well because
+#####-7 When user from "error when migrating" finally got the app running, it still didn't work that well because
 
 > db:seed fails with oMethodError: undefined methodcost' for BCrypt::Engine:Class`
 
--8 User reported: "Some points of installation."
+#####-8 User reported: "Some points of installation."
 - using postgres as superuser is necessary for hstore to run
 - Had to modify pg_hba.conf to use "trust" in place of md5
 - Had to run db:migrate as a postgres (super) user with sudo su - postgres
 - Had to export two environment variables with bash.
 
--9 Error when seeding:
+#####-9 Error when seeding:
 
 > NameError: uninitialized constant Chapter
 
 from line 38 in the seeds.rb
 
--10 With all dependencies installed; when running ./launch.sh, on OSX 10.8.5 with a couple other ports running for a couple of django projects. User got this error:
+#####-10 With all dependencies installed; when running ./launch.sh, on OSX 10.8.5 with a couple other ports running for a couple of django projects. User got this error:
 
 > connect: multipart: use parser (multiparty, busboy, formidable) directly
 > connect: limit: Restrict request size at location of read
@@ -78,6 +78,6 @@ he was able to get it running on http://localhost:3000/?playerID=f91161b2a6
 however, still got the connect: multipart: use parser (multiparty, busboy, formidable) directly
 connect: limit: Restrict request size at location of read error
 
--11 When using rake db:seed, users are reporting
+#####-11 When using rake db:seed, users are reporting
 
 > NoMethodError: undefined method 'code' for nil:NilClass
