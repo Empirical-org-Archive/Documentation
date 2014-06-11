@@ -50,7 +50,7 @@ pool: 5
 
 > db:seed fails with oMethodError: undefined methodcost' for BCrypt::Engine:Class`
 
--8 Some points of installation.
+-8 User reported: "Some points of installation."
 - using postgres as superuser is necessary for hstore to run
 - Had to modify pg_hba.conf to use "trust" in place of md5
 - Had to run db:migrate as a postgres (super) user with sudo su - postgres
