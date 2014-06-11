@@ -20,11 +20,15 @@ git submodule init && git submodule update
 
 > : CREATE EXTENSION IF NOT EXISTS hstore
 
-5. error when migrating, the scheme postgres does not accept registry part: super:4Rh0izHYfmfWx9cV@:   terminal output:rake aborted!
-StandardError: An error has occurred, this and all later migrations canceled:
 
-the scheme postgres does not accept registry part: super:4Rh0izHYfmfWx9cV@: (or bad hostname?)/Users/jasonlo/Documents/DBC/side_projects/Compass/db/migrate/20140522033151_add_queue_classic.rb:5:in `up'
-Tasks: TOP => db:migrate
+5. error when migrating 
+
+> the scheme postgres does not accept registry part: super:4Rh0izHYfmfWx9cV@:   
+
+> terminal output:rake aborted! StandardError: An error has occurred, this and all later migrations canceled:
+
+> the scheme postgres does not accept registry part: super:4Rh0izHYfmfWx9cV@: (or bad hostname?)/Users/jasonlo/Documents/DBC/side_projects/Compass/db/migrate/20140522033151_add_queue_classic.rb:5:in `up'
+> Tasks: TOP => db:migrate
 (See full trace by running task with --trace)
 
 database.yml: 
