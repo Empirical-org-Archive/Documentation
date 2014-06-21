@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>A Brand New nanoc Site - <%= @item[:title] %></title>
+    <link rel="stylesheet" href="<%= @items['/stylesheet/'].path %>">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
+  </head>
+  <body>
+    <div id="breadcrumbs">
+      <% breadcrumbs.each do |crumb| %>
+        <a href="<%= crumb[:id] %>"><%= crumb[:name] %></a>
+        <% unless crumb[:last] %>&gt;<% end %>
+      <% end %>
+    </div>
+
+    <div id="main">
+      <%= yield %>
+    </div>
+
+    <div id="sidebar">
+      <ul>
+        <% navigation_items do |folder| %>
+          <li><%= folder %></li>
+        <% end %>
+      </ul>
+    </div>
+  </body>
+</html>

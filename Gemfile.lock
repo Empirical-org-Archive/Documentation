@@ -1,0 +1,43 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.3.6)
+    adsf (1.2.0)
+      rack (>= 1.0.0)
+    awesome_print (1.2.0)
+    coderay (1.0.9)
+    colored (1.2)
+    cri (2.6.1)
+      colored (~> 1.2)
+    faraday (0.8.9)
+      multipart-post (~> 1.2.0)
+    faraday-http-cache (0.4.0)
+      faraday (~> 0.8)
+    method_source (0.8.2)
+    multipart-post (1.2.0)
+    nanoc (3.7.1)
+      cri (~> 2.3)
+    octokit (2.7.0)
+      sawyer (~> 0.5.2)
+    pry (0.9.12.2)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+    rack (1.5.2)
+    redcarpet (3.1.2)
+    sawyer (0.5.2)
+      addressable (~> 2.3.5)
+      faraday (~> 0.8, < 0.10)
+    slop (3.4.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  adsf
+  awesome_print
+  faraday-http-cache
+  nanoc
+  octokit
+  pry
+  redcarpet
