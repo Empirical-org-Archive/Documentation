@@ -8,3 +8,6 @@ gem 'pry'
 gem 'adsf'
 gem 'redcarpet'
 gem 'awesome_print'
+gem 'activesupport', require: 'active_support/core_ext'
+gem 'sass'
+gem 'foundation-rails', require: false

@@ -1,14 +1,21 @@
-class GithubFileCache
-  def initialize
-    @base = loop do
+module NanocRoot
+  def root
+    @root = loop do
       break(Dir.pwd) if Dir.glob('Rules').length == 1
       break(nil) if Dir.pwd == '/'
       Dir.chdir('..')
     end
 
-    raise 'Not inside a Nanoc project' if @base.nil?
+    raise 'Not inside a Nanoc project' if @root.nil?
+    Pathname.new(@root)
+  end
 
-    @base = Pathname.new(@base).join('tmp', 'cache')
+  extend self
+end
+
+class GithubFileCache
+  def initialize
+    @base = NanocRoot.root.join('tmp', 'cache')
     FileUtils.mkdir_p(@base)
   end
 
@@ -59,6 +66,10 @@ class GithubDataSource < Nanoc::DataSource
       file.path.sub(/.md$/, '')
     end
 
+    def tree_file
+      @tree_file ||= Base64.decode64(Octokit.contents('empirical-org/Documentation', path: 'documents.json', ref: 'config').content)
+    end
+
     def tree
       @tree ||= Octokit.tree('empirical-org/Documentation', 'master', recursive: true).tree
     end
@@ -71,7 +82,6 @@ class GithubDataSource < Nanoc::DataSource
         loc = res
         paths = file.path.split('/').unshift('Docs')
         filename = paths.pop
-        blob = Octokit.blob('empirical-org/Documentation', file.sha)
 
         paths.each do |seg|
           loc = loc[seg] ||= {}
@@ -82,16 +92,20 @@ class GithubDataSource < Nanoc::DataSource
           parents: paths,
         }
 
-        if f.type == 'tree'
+        if file.type == 'tree'
           attrs[:extension] = 'html'
           attrs[:id]        = attrs[:filename]
 
-          item = @items << Nanoc::Item.new('<%= "test erb filter" %>', file.attrs.merge(attrs), attrs[:id], binary: false)
+          @items << item = Nanoc::Item.new(File.read(NanocRoot.root.join('layouts', 'folder.html')), file.attrs.merge(attrs), attrs[:id], binary: false)
+
+          loc[item[:id]] ||= {}
+          loc[item[:id]][:item] = item
         else
           attrs[:extension] = 'md'
           attrs[:id]        = file_identifier(file)
 
-          item = @items << Nanoc::Item.new(Base64.decode64(blob.content), file.attrs.merge(attrs), attrs[:id], binary: false)
+          blob = Octokit.blob('empirical-org/Documentation', file.sha)
+          @items << item = Nanoc::Item.new(Base64.decode64(blob.content), file.attrs.merge(attrs), attrs[:id], binary: false)
 
           loc[:files] ||= []
           loc[:files] << attrs.dup.merge(item: item)
@@ -102,7 +116,16 @@ class GithubDataSource < Nanoc::DataSource
     end
 
     def files_for item
-      binding.pry
+      nav_for(item)[:files] || []
+    end
+
+    def folders_for item
+      nav_for(item).except(:files, :item)
+    end
+
+    def nav_for item
+      dir = item[:parents].inject(sitemap){|c,p| c[p] }
+      if item[:extension] == 'html' then dir[item[:id]] else dir end
     end
   end
 
