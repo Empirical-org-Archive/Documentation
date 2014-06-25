@@ -8,6 +8,7 @@ echo tmp         >> .gitignore
 echo crash.log   >> .gitignore
 echo .sass-cache >> .gitignore
 
-# git add .
-# git commit -m publish
-# git push -f origin gh-pages
+git add .
+git commit -m publish
+git push -f origin gh-pages
+git chekcout nanoc
