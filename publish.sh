@@ -8,6 +8,9 @@ echo tmp         >> .gitignore
 echo crash.log   >> .gitignore
 echo .sass-cache >> .gitignore
 
+mv output/* ./
+rmdir output
+
 git add .
 git commit -m publish
 git push -f origin gh-pages
