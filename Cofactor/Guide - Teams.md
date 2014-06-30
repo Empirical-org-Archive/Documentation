@@ -1,23 +1,6 @@
 # Guide: Empirical Teams
 *Empirical is a nonprofit organization composed of teams of developers. Developers may belong to multiple teams, and each team has specific goals.*
 
-The various teams are grouped into roughly four purposes:
-
-1. The Engine
-These teams are focused on building the the platform that delivers the interactive activities and the knowledge engine that coordinates our development. 
-
-2. The Activities
-These teams are focused on developing learning activities. 
-
-3. The Impact
-These teams are focused on building a community of learners for our activities. 
-
-4. The Organization
-These teams are focused on developing Empirical into a sustainable institution. 
-
-
-### 
-
 ## The Engine
 These teams are focused on building the the platform that delivers the interactive activities and the knowledge engine that coordinates our development. 
 
@@ -45,7 +28,6 @@ Our analytics platform is a premium subscription service that visualizes how use
 ##The Activities
 *These teams are focused on developing learning activities.*
 
-
 ### Activity Community
 The Activity Community team engages with other people and organizations developing learning activities. Our goal is to form partnerships and integrate other apps through our API. 
 
@@ -66,8 +48,10 @@ Stories With Friends is a collaborative storytelling game. Students are paired t
 ## The Impact
 *These teams are focused on building a community of learners for our activities.*
 
+
 ### Teacher Dialogue
 The teacher dialogue team focuses on engaging teachers with Quill. 
+
 
 ### News & Press
 This team focuses on creating news posts and engaging with the EdTech journalism community. 
@@ -76,8 +60,10 @@ This team focuses on creating news posts and engaging with the EdTech journalism
 ### Narrative
 The narrative team focuses on how we present our message across teams. 
 
+
 ### Learning Platforms
 The learning platforms team focuses on adding Quill to all of the pre-existing platforms for sharing educational resources. 
+
 
 ### Research
 The research team focuses on facilitating and conducting research into Quill’s impact on education.  
