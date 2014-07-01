@@ -23,7 +23,7 @@ __High Level Overview:__ Docker is a linux container that contains our entire de
 git clone https://github.com/empirical-org/Compass-Module-Environment.git
 cd Compass-Module-Environment
 git submodule init && git submodule update && cd Compass && git submodule init && git submodule update && cd ../Compass-API && git submodule init && git submodule update && cd ..
-docker-osx shell
+docker-osx shell # wait for VM to boot
 fig up
 ~~~
 
