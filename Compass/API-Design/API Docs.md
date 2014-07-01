@@ -35,6 +35,14 @@ Authorization for a resource is based on the access token and the user it is ass
 
 An activity requires to endpoints to function, `module_url` and `form_url`. These urls are loaded to display and update an activity. 
 
+For example, if your `module_url` is `http://app.example.com/module` then Compass would load a url similar to this:
+
+~~~
+http://app.example.com/module?uid=asdf1234&sid=5678aoeu
+~~~
+
+
+
 
 Requirements of an activity app:
 
