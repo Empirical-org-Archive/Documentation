@@ -32,5 +32,15 @@ Open a new tab and run `docker-osx shell`
 cd Compass-Module-Environment/
 fig run compass rake db:migrate db:seed
 fig run quill rake db:migrate db:seed
-# (restart fig)
 ~~~
+
+Return to the previous tab and restart fig:
+
+~~~
+^C # wait for fig to exit
+find . -name server.pid -delete
+fig up
+~~~
+
+
+
