@@ -22,7 +22,7 @@ We are currently building **Quill**, a web application that provides interactive
 ## Projects
 *What are we working on right now?*
 
-[Update to date overview of our current projects.](projects page). 
+Missing: Update to date overview of our current projects.
 
 ## Code Tour
 *Ready to start hacking? Learn about our code base*
@@ -33,4 +33,6 @@ Read this high level overview of our code base.
 ## Install Process
 *How the heck do I get this running?*
 
-Read the install process to get the code set up locally. 
+[Read the install process to get the code set up locally using docker.](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Install%20Guide.md)
+
+
