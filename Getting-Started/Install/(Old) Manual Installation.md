@@ -11,8 +11,7 @@ Quill is an open platform for providing interactive grammar lessons.
 Contributing
 ------------
 
-Quill is built and maintained by a core team and volunteers. If you have ideas
-on how to improve Quill, or just want to help, please join us!
+Quill is built and maintained by a core team and volunteers. If you have ideas on how to improve Quill, or just want to help, please join us!
 
 1.  Check our [Github issue queue](https://github.com/empirical-org/quill/issues?state=open) for ideas on how to help.
 2.  Make sure your code follows [Ruby](https://github.com/styleguide/ruby) and project conventions.
