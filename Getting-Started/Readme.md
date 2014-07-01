@@ -7,7 +7,7 @@
 
 *Our mission is to challenge students through interactive learning experiences.*
 
-**Empirical** is a nonprofit, open source community that builds interactive education. We are currently building **Quill**, a web application that provides interactive writing activities for students. There are currently 10,000 students using our site. [Read our mission statement.](http://www.quill.org/mission). 
+**Empirical** is a nonprofit, open source community that builds interactive education. We are currently building **Quill**, a web application that provides interactive writing activities for students. There are currently 10,000 students using our site. [Read our mission statement.](http://www.quill.org/mission)
 
 ## Code Tour
 *Ready to start hacking? Learn about our code base*
