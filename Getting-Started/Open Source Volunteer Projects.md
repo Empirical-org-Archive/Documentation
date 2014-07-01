@@ -2,10 +2,6 @@
 
 Below are some areas of the site where we are currently seeking contributions. If any seem of interest please send an email to hello@quill.org and we'll arrange a time to chat about getting started. 
 
-## Developer environment. 
-
-Help with new developer environment. Requires working with docker and vagrant. If you're interested in working with these technologies let us know. 
-
 ## Integration testing
 
 Write Rspec tests for common functionality. 
@@ -16,10 +12,9 @@ Write Rspec tests for common functionality.
 * (link to QA doc)
 * Complete a lesson, review results displayed
 
-## Issues labelled "pick me"
+## Issues labelled "level:starter"
 
-(link to issues)
-Pick Me issues are good starting point issues. They are generally smaller, self-contained projects. Projects listed as "Code" have a Wireframe and are ready to be designed. 
+Starter issues are good starting point issues. They are generally smaller, self-contained projects. Projects listed as "Code" have a Wireframe and are ready to be designed. 
 
 ## Bug reports
 
