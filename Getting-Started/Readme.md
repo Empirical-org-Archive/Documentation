@@ -3,11 +3,11 @@
 *This page links to everything you need to know to get started with Quill. Please explore our docs!*
 
 ## Mission
-**Empirical** is a nonprofit, open source community that builds interactive education. 
+
 
 *Our mission is to challenge students through interactive learning experiences.*
 
-We are currently building **Quill**, a web application that provides interactive writing activities for students. There are currently 10,000 students using our site. Read about our mission [here](http://www.quill.org/mission). 
+**Empirical** is a nonprofit, open source community that builds interactive education. We are currently building **Quill**, a web application that provides interactive writing activities for students. There are currently 10,000 students using our site. Read about our mission [here](http://www.quill.org/mission). 
 
 ## Code Tour
 *Ready to start hacking? Learn about our code base*
