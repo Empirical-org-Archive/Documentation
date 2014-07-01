@@ -17,17 +17,8 @@ __High Level Overview:__ Docker is a linux container that contains our entire de
   
   http://orchardup.github.io/fig/install.html
 
-## Setup Fig
-~~~ sh
-docker-osx shell
-docker import https://s3.amazonaws.com/compass-files/compass.tar compass_base
-docker import https://s3.amazonaws.com/compass-files/compass_api.tar compass_api_base
-docker import https://s3.amazonaws.com/compass-files/quill.tar quill_base
-~~~
-
-Confirm they are installed with `docker images`
-
 ## Download Compass
+
 ~~~ sh
 git clone https://github.com/empirical-org/Compass-Module-Environment.git
 cd Compass-Module-Environment
@@ -36,6 +27,7 @@ fig up
 ~~~
 
 Open a new tab and run `docker-osx shell`
+
 ~~~ sh
 cd Compass-Module-Environment/
 fig run compass rake db:migrate db:seed
