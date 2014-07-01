@@ -10,21 +10,21 @@
 **Empirical** is a nonprofit, open source community that builds interactive education. We are currently building **Quill**, a web application that provides interactive writing activities to 10,000 students. [Read our mission statement.](http://www.quill.org/mission)
 
 ## Code Tour
-*Ready to start hacking? Learn about our code base*
+*Ready to start hacking? Learn about our code base.*
 
-Read this guide to get a walking tour of our code through the user experience. 
+A walking tour of our code through the user experience. (in development).
 
-Read this high level overview of our code base. 
+[A High level overview of our code base.](https://github.com/empirical-org/Documentation/blob/master/Compass/Code-Overview/Compass%20Code%20Overview.md)
 
 ## Install Process
 *How the heck do I get this running?*
 
-[Read the install process to get the code set up locally using docker.](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Install%20Guide.md)
+[Install the code locally using docker.](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Install%20Guide.md)
 
 ## Projects
 *What are we working on right now?*
 
-Missing: Update to date overview of our current projects.
+Projects we are currently working on. (in development).
 
 ## Workflow
 *How do we collaborate and build together?*
