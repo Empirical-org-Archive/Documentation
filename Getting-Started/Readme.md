@@ -26,8 +26,12 @@ Read this high level overview of our code base.
 
 Missing: Update to date overview of our current projects.
 
-## Tools
+## Workflow
 *How do we collaborate and build together?*
+
+How we coordinate. 
+
+Code Contribution Guidelines
 
 [Click here to read about all of the tools we use.](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Contributor-Questions.md)
 
