@@ -29,7 +29,7 @@ Confirm they are installed with `docker images`
 
 ## Download Compass
 ~~~ sh
-git clone git@github.com:empirical-org/Compass-Module-Environment.git
+git clone https://github.com/empirical-org/Compass-Module-Environment.git
 cd Compass-Module-Environment
 git submodule init && git submodule update && cd Compass && git submodule init && git submodule update && cd ../Compass-API && git submodule init && git submodule update && cd ..
 fig up
