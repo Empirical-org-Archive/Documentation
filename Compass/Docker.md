@@ -42,5 +42,5 @@ find . -name server.pid -delete
 fig up
 ~~~
 
-
+Run `http://localdocker:3000/`
 
