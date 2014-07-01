@@ -29,11 +29,11 @@ Missing: Update to date overview of our current projects.
 ## Workflow
 *How do we collaborate and build together?*
 
-How we coordinate. 
+[How we collaborate through Cofactor.](https://github.com/empirical-org/Documentation/blob/master/Cofactor/Guide-Using-Cofactor.md)
 
 Code Contribution Guidelines
 
-[Click here to read about all of the tools we use.](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Contributor-Questions.md)
+[The services we use.](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Common-Questions.md)
 
 
 
