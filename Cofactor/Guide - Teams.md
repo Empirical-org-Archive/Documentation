@@ -1,5 +1,7 @@
 # Guide: Empirical Teams
-*Empirical is a nonprofit organization composed of teams of developers. Developers may belong to multiple teams, and each team has specific goals.*
+*Empirical is a nonprofit organization composed of teams of developers.* 
+
+*Developers may belong to multiple teams, and each team has specific goals.*
 
 ## The Engine
 These teams are focused on building the the platform that delivers the interactive activities and the knowledge engine that coordinates our development. 
