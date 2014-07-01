@@ -46,6 +46,12 @@
           <li><a href="<%= attrs[:item].identifier %>"><%= attrs[:item][:id] %></a></li>
         <% end %>
       </ul>
+
+      <ul class="folders side-nav">
+        <% if github_link(item) %>
+          <li><a href="<%= github_link(item) %>">Edit on github</a></li>
+        <% end %>
+      </ul>
     </div>
   </div>
 </div>

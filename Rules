@@ -18,7 +18,22 @@ foundation_css = Pathname.new(Bundler.definition.specs.find{|s| s.name == 'found
 compile '*' do
   case item[:extension]
   when 'md'
-    filter :redcarpet
+    renderer = Class.new(Redcarpet::Render::HTML) do
+      def add_code_tags(code, lang)
+        code = code.sub(/<pre>/, "<pre><code class=\"#{lang} language-#{lang}\" data-lang=\"#{lang}\">")
+        code = code.sub(/<\/pre>/,"</code></pre>")
+      end
+
+      def block_code(code, lang)
+        lang = lang && lang.split.first || "text"
+        output = add_code_tags(
+          Pygments.highlight(code, :lexer => lang, :options => { :encoding => 'utf-8' }),
+          lang
+        )
+      end
+    end
+
+    filter :redcarpet, options: {fenced_code_blocks: true}, renderer: renderer
   when 'html'
     filter :erb
   when 'scss'
