@@ -36,7 +36,7 @@ fig run quill rake db:migrate db:seed
 
 Return to the previous tab and restart fig:
 
-~~~
+~~~ sh
 ^C # wait for fig to exit
 find . -name server.pid -delete
 fig up
