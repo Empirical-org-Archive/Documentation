@@ -1,13 +1,14 @@
-#API Docs
+# API Docs
 
 The quill API uses oauth for auth. 
 
-API endpoints plural:
+## API Endpoints
 
-Sessions
-Activities
+The API is organized into endpoints that follow a standard format. For example:
 
 Plural works like this:
+Sessions
+Activities
 
 POST /types
 Creates
@@ -29,6 +30,11 @@ GET / POST / PUT /type
 Creates, updates, displays the resource.
 
 Authorization for a resource is based on the access token and the user it is associated with.
+
+## Activity specification
+
+An activity requires to endpoints to function, `module_url` and `form_url`. These urls are loaded to display and update an activity. 
+
 
 Requirements of an activity app:
 
