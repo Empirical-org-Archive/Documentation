@@ -12,7 +12,7 @@ We are currently building **Quill**, a web application that provides interactive
 ## Teams
 *Whose involved with Quill? Learn about all of our teams*
 
-[Click here to see all of our teams!](Documentation/blob/master/Cofactor/Guide%20-%20Teams.md). 
+[Click here to see all of our teams!](https://github.com/empirical-org/Documentation/blob/master/Cofactor/Guide%20-%20Teams.md). 
 
 ## Tools
 *How do we collaborate and build together?*
