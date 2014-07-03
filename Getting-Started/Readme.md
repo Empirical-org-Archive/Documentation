@@ -15,9 +15,11 @@
 ## Code Tour
 *Ready to start hacking? Learn about our code base.*
 
-A walking tour of our code through the user experience. (in development).
+A walking tour through the user's experience. (in development).
 
 [A High level overview of our code base.](https://github.com/empirical-org/Documentation/blob/master/Compass/Code-Overview/Compass%20Code%20Overview.md)
+
+How to build a Compass App. (in development).
 
 ## Install Process
 *How the heck do I get this running?*
