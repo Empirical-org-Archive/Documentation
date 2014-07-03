@@ -1,6 +1,66 @@
 # API Docs
 
-The quill API uses oauth for auth. 
+## Setup Oauth
+
+Currently, you must work with a Quill admin to create your oauth account. Send
+your application info to help@quill.org and you will receive a consumer token
+and secret. You can also use the
+[Compass-Module-Environment](http://github.com/empirical-org/Compass-Module-Environment)
+to setup your own Compass and develop your application against that. This
+guide will assume that you are using this approach.
+
+## Setup Compass
+
+(use docker)
+
+## Configure your application
+
+__Sign in as an admin:__
+
+ * Browse to http://localdocker:3000/session/new
+ * email: admin@quill.org, password: admin
+
+__Setup Oauth app:__
+
+This creates your application as an compass oauth consumer. You will need to implement an oauth client within your application. 
+
+ * Browse to http://localdocker:3000/oauth/applications/new
+ * Enter a name for your app. Can be anything. 
+ * Enter a redirect url. Most likely will be on localhost or localdocker,
+   depending on your setup.
+
+__Setup Compass app:__
+
+This sets up your apps' parameters in Compass. You will need a `module_url` and a `form_url` (documented below):
+
+ * Browse to http://localdocker:3000/cms/activity_classifications/new
+ * Enter a name for your app. This is for convenience only, can be anything.
+ * Enter a key. Must be unique. We're going to use "example" for this tutorial.
+ * Enter your app's `form_url` and `module_url`. For Example, you could enter:
+
+   ~~~
+   form_url:   http://localhost:3000/form
+   module_url: http://localhost:3000/module
+   ~~~
+
+   The guide will assume that you used these settings.
+
+## Creating an activity
+
+ * Browse to http://localdocker:3000/cms/activity_classifications/
+ * Click on the "Activities" link next to your app name.
+ * Click on "Add a new activity"
+ * You should now be on a page with a url similar to 
+   http://localdocker:3000/cms/activity_type/example/activities/new
+ * Fill in the Compass properties and hit "next".
+ * From this page, you can begin to test your `form_url`.
+
+## Setting up `form_url`
+
+
+-------------------------------
+
+Compass relies on two pages within your app
 
 ## API Endpoints
 
