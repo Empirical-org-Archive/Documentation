@@ -2,6 +2,10 @@
 
 *This page links to everything you need to know to get started with Quill. Please explore our docs!*
 
+- **Getting Started:** [Start here with this doc.](https://github.com/empirical-org/Documentation/tree/master/Getting-Started) 
+- **Mailing List:** [Compass developers mailing list.](https://groups.google.com/forum/#!forum/empirical-compass)
+- **Real Time Chat:** [Join us in the Compass Gitter room.](https://gitter.im/empirical-org/Compass)
+
 ## Mission
 
 
@@ -25,6 +29,9 @@ A walking tour of our code through the user experience. (in development).
 *What are we working on right now?*
 
 Projects we are currently working on. (in development).
+
+[Starting projects for Open Source developers](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Open%20Source%20Volunteer%20Projects.md)
+
 
 ## Workflow
 *How do we collaborate and build together?*
