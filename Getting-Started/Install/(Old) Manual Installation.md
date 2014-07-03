@@ -2,8 +2,6 @@
 
 *These instructions may be out of date. If you run into issues, use the Docker install.*
 
-ng with Manual Install
---------
 
 **If you are having any trouble installing, please post your questions to the ["Questions" mailing list in Cofactor.](http://www.empirical.org/cofactor/teams/compass)**
 
