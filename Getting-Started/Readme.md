@@ -39,9 +39,9 @@ Projects we are currently working on. (in development).
 
 [How we collaborate through Cofactor.](https://github.com/empirical-org/Documentation/blob/master/Cofactor/Guide-Using-Cofactor.md)
 
-Code Contribution Guidelines
+[Code Contribution Guidelines](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Contributing.md)
 
-[The services we use.](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Common-Questions.md)
+[The services we use.](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Common%20Questions.md)
 
 
 
