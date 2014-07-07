@@ -17,9 +17,9 @@ __High Level Overview:__ Docker is a linux container that contains our entire de
   
   http://orchardup.github.io/fig/install.html
 
-## Notes on Linux Distrobutions
+## Notes on Linux Distributions
 
-If you are using a distrobution of linux it is not necessary to use docker-osx. All of the commands should work exactly the same if you just skip over the docker-osx lines.
+If you are using a distribution of linux it is not necessary to use docker-osx. All of the commands should work exactly the same if you just skip over the docker-osx lines.
 
 ## Download Compass
 
