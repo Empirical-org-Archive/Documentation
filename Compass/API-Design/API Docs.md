@@ -59,6 +59,8 @@ This sets up your apps' parameters in Compass. You will need a `module_url` and 
 
 
 -------------------------------
+The walkthrough ends here. The rest of this document is unorganized notes. 
+-------------------------------
 
 Compass relies on two pages within your app
 
