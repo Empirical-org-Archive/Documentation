@@ -37,7 +37,7 @@ Projects we are currently working on. (in development).
 ## Workflow
 *How do we collaborate and build together?*
 
-[Please Read: How We Work Together Cofactor.](https://github.com/empirical-org/Documentation/blob/master/Cofactor/Guide%20-%20How%20We%20Build%20Together.md)
+[Please Read: How We Work Together](https://github.com/empirical-org/Documentation/blob/master/Cofactor/Guide%20-%20How%20We%20Build%20Together.md)
 
 [Code Contribution Guidelines](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Contributing.md)
 
