@@ -10,6 +10,7 @@
 ### Compass
 
 [View the Compass team.](https://github.com/empirical-org/Documentation/tree/master/Compass)
+
 Compass is our learning management system for organizing and presenting our activities. All of our core back end development is through Compass.
 
 
