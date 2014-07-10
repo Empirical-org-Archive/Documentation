@@ -9,9 +9,8 @@
 
 ### Compass
 
-[View the Compass team.](https://github.com/empirical-org/Documentation/tree/master/Compass)
+Compass is our learning management system for organizing and presenting our activities. All of our core back end development is through Compass. [View the Compass team.](https://github.com/empirical-org/Documentation/tree/master/Compass)
 
-Compass is our learning management system for organizing and presenting our activities. All of our core back end development is through Compass.
 
 
 ### Cofactor 
@@ -47,9 +46,8 @@ The Quill Grammar Lessons team builds the sentence writing and passage proofread
 
 ### Stories With Friends
 
-[View the Stories With Friends team.](https://github.com/empirical-org/Documentation/tree/master/Stories-with-Friends)
+Stories With Friends is a collaborative storytelling game. Students are paired together and write a story from a shared list of vocabulary words. [View the Stories With Friends team.](https://github.com/empirical-org/Documentation/tree/master/Stories-with-Friends)
 
-Stories With Friends is a collaborative storytelling game. Students are paired together and write a story from a shared list of vocabulary words. 
 
 
 
