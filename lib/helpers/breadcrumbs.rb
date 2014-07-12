@@ -12,7 +12,7 @@ module BreadcrumbsHelper
       attrs
     end
 
-    items.last[:last] = true
+    items << { current: true, name: @item[:filename] }
     items
   end
 end

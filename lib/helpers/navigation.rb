@@ -1,5 +1,6 @@
 module NavigationHelper
   def navigation_title
+    return item[:id] if item[:dir]
     item[:parents].last
   end
 
@@ -20,8 +21,12 @@ module NavigationHelper
   end
 
   def github_link item
-    return nil if item[:extension] != 'md'
+    filename = if item[:dir]
+      Pathname.new('/').join(*(item[:parents] - ['Docs']), item[:filename] || '/', 'README.md').to_s
+    else
+      "#{(item[:parents] - ['Docs']).join('/')}/#{item[:filename]}"
+    end 
 
-    "https://www.github.com/empirical-org/Documentation/blob/master/#{(item[:parents] - ['Docs']).join('/')}/#{item[:filename]}"
+    "https://www.github.com/empirical-org/Documentation/blob/master/#{filename}"
   end
 end

@@ -13,14 +13,25 @@
 
 <body>
 
-<div class="row">
+<div class="top-nav">
+  <div class="row">
     <div class="large-12 columns">
-    <div id="breadcrumbs">
-      <% breadcrumbs.each do |crumb| %>
-        <a href="<%= crumb[:id] %>"><%= crumb[:name] %></a>
-        <% unless crumb[:last] %>&gt;<% end %>
-      <% end %>
+      <a href="/">Compass Documentation</a>
+      <div class="right">
+
+      </div>
     </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="breadcrumbs">
+      <% breadcrumbs.each do |crumb| %>
+
+        <li <% if crumb[:current] %>class="current"<% end %>><a href="<%= crumb[:id] %>"><%= crumb[:name] %></a></li>
+      <% end %>
+    </ul>
   </div>
 </div>
 
@@ -33,25 +44,42 @@
 
   <div class="large-4 columns">
     <div id="sidebar">
-      <h1><%= navigation_title %></h1>
 
-      <ul class="files side-nav">
-        <% navigation_files.each do |file| %>
-          <li><a href="<%= file[:item].identifier %>"><%= file[:filename] %></a></li>
+      <ul class="side-nav">
+        <li><strong><%= navigation_title %></strong></li>
+
+        <% if navigation_files.any? %>
+          <li class="divider"></li>
+
+          <% navigation_files.each do |file| %>
+            <li><a href="<%= file[:item].identifier %>">
+              <span class="octicon octicon-file-text"></span>
+              <%= file[:filename] %>
+            </a></li>
+          <% end %>
         <% end %>
-      </ul>
 
-      <ul class="folders side-nav">
-        <% navigation_folders.each do |folder, attrs| %>
-          <li><a href="<%= attrs[:item].identifier %>"><%= attrs[:item][:id] %></a></li>
+        <% if navigation_folders.any? %>
+          <li class="divider"></li>
+
+          <% navigation_folders.each do |folder, attrs| %>
+            <li><a href="<%= attrs[:item].identifier %>">
+              <span class="octicon octicon-file-directory"></span>
+              <%= attrs[:item][:id] %>
+            </a></li>
+          <% end %>
         <% end %>
-      </ul>
 
-      <ul class="folders side-nav">
         <% if github_link(item) %>
-          <li><a href="<%= github_link(item) %>">Edit on github</a></li>
+          <li class="divider"></li>
+
+          <li><a href="<%= github_link(item) %>">
+            <span class="octicon octicon-octoface"></span>
+            Edit on github
+          </a></li>
         <% end %>
       </ul>
+
     </div>
   </div>
 </div>

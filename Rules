@@ -50,6 +50,16 @@ compile '*' do
   end
 end
 
+# static
+
+compile '/static/*/' do
+end
+
+route '/static/*/' do
+  # /static/foo.html/ → /foo.html
+  item.identifier[7..-2]
+end
+
 route '*' do
   if item[:extension] == 'scss'
     # Write item with identifier /foo/ to /foo.css

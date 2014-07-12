@@ -1,1 +1,30 @@
+@import 'octicons';
 @import 'foundation';
+
+.top-nav {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 1em;
+  padding: 1em 0;
+}
+
+.side-nav {
+  padding: 0;
+  border-radius: 3px;
+  margin-bottom: 1em;
+  border: 1px solid #efefef;
+
+  li {
+    margin: 0;
+
+    &.divider {
+      border-top: 1px solid #efefef;
+    }
+
+    strong {
+      display: block;
+      margin: $side-nav-link-margin;
+      padding: $side-nav-link-padding;
+    }
+  }
+}
