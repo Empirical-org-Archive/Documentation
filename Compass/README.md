@@ -2,7 +2,7 @@
 
 Compass is a learning management system built for interactive education. With Compass, teachers can assign learning activities and view results. 
 
-- **Getting Started:** [Start here with this doc.](https://github.com/empirical-org/Documentation/tree/master/Getting-Started) 
+- **Getting Started:** [Start here with this doc.](/Getting-Started) 
 - **Cofactor Compass:** [Our project management HQ](http://www.empirical.org/cofactor/teams/compass)
 - **Mailing List:** [Compass developers mailing list.](https://groups.google.com/forum/#!forum/empirical-compass)
 - **Real Time Chat:** [Join us in the Compass Gitter room.](https://gitter.im/empirical-org/Compass)
