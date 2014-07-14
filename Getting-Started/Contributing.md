@@ -16,9 +16,42 @@
 * Use a minimalist approach to using gems like devise, FactoryGirl, etc, unless they're absolutely needed.
 
 
-***
+## Commit Message Guidelines
 
-*the text below is copied from https://github.com/thoughtbot/factory_girl_rails/blob/master/CONTRIBUTING.md. Using this as a good starting point:*
+[Follow these best practices from Git.](http://git-scm.com/book/ch5-2.html#Commit-Guidelines)
+
+## Pull Request Review
+
+Quinn and Josh will review pull requests and provide feedback on code quality. Large commits will be reviewed in a pair programming session.
+
+## Testing on Staging
+
+The code reviewer will deploy each test to staging, and the feature will be tested on staging before being released. 
+
+
+## Code Deployement
+
+Deploy production and staging:
+
+~~~ sh
+git remote add heroku-production git@github.com:empirical-grammar.git
+git remote add heroku-staging    git@github.com:empirical-grammar-staging.git
+
+## production:
+git push heroku-production REF:master
+
+## staging:
+git push heroku-staging REF:master
+~~~
+
+This command deploys the given ref (replace `REF` with `master`, `branch-name`, etc) to the specified environment.
+
+## Testing guidelines
+
+All new features should have some form of integration testing. If any of the units are complex enough to merit it a unit test can be written for them as well (but not necessary). No acceptance testing framework is currently being used.
+
+## Pull Request Guidelines
+*the text below is copied from https://github.com/thoughtbot/factory_girl_rails/blob/master/CONTRIBUTING.md.*
 
 We love pull requests. Here's a quick guide:
 
@@ -56,3 +89,9 @@ Syntax:
 * MyClass.my_method(my_arg) not my_method( my_arg ) or my_method my_arg.
 * a = b and not a=b.
 * Follow the conventions you see used in the source already.
+
+
+## Provisioning 
+
+Servers are manually provisioned at this time.
+
