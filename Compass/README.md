@@ -22,6 +22,6 @@ Building with Docker
 --------
 
 You can run Compass locally by using a Docker Image and a Virtual Machine. 
-[Read the instructions](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Install%20Guide.md)
+[Read the instructions](/Getting-Started/Install/Install%20Guide.md)
 
 
