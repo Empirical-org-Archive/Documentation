@@ -1,5 +1,7 @@
 # Contributing Guidelines
 
+note: If you are using docker and fig, you will have to preface commands such as rake, rails, bundle, etc with `fig compass run <cmd>`
+
 ## Check the Issue Queue
 Check our [Github issue queue](https://github.com/empirical-org/Compass/issues?state=open) for ideas on how to help.
 
