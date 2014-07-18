@@ -49,3 +49,6 @@ fig up
 
 Run `http://localdocker:3000/`
 
+## Finished! Next steps
+
+Read the [Contributing Guide](/Getting-Started/Contributing.md) for guidelines on how to contribute your changes.
