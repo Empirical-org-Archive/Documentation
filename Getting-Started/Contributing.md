@@ -28,7 +28,7 @@ to know that you have a clean slate: `bundle && rake`
    
    The only exception to this would be some frontend changes. Since we don't currently
    use a javascript testing framework or an acceptance testing framework, some frontend 
-   changes may not require any tests (please heir on the side of testing, though).
+   changes may not require any tests (please err on the side of testing, though).
 
 4. __Make the test pass.__
 
