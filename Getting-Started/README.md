@@ -10,10 +10,10 @@
 *If you are writing code please read these docs.*
 
 - [Install Process](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Install%20Guide.md)
-- [Code High Level Overview](https://github.com/empirical-org/Documentation/blob/master/Compass/Code-Overview/Compass%20Code%20Overview.md)
-- [API Design](https://github.com/empirical-org/Documentation/blob/master/Compass/API-Design/API%20Docs.md)
-- [Contributing Guidelines](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Contributing.md)
-- [Collaboration Guidelines](https://github.com/empirical-org/Documentation/blob/master/Cofactor/Guide%20-%20How%20We%20Build%20Together.md)
+- [Compass High Level Overview](https://github.com/empirical-org/Documentation/blob/master/Compass/Code-Overview/Compass%20Code%20Overview.md) Compass is our LMS for assigning activities and viewing results. 
+- [API Design](https://github.com/empirical-org/Documentation/blob/master/Compass/API-Design/API%20Docs.md) This doc explains how Compass communicates with our applications. 
+- [Contributing Guidelines](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Contributing.md) Our open source code development workflow. 
+- [Collaboration Guidelines](https://github.com/empirical-org/Documentation/blob/master/Cofactor/Guide%20-%20How%20We%20Build%20Together.md) How we communicate and share information. 
 
 
 ## Mission
