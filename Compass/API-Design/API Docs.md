@@ -1,5 +1,15 @@
 # API Docs
 
+## High level overview
+
+Compass is our LMS for assigning activities and viewing results. The Compass database contains a link to every single activity. For example, we currently feature 150 activities, and Compass stores the name of each activity, a description of the activity, and a link to that activity. The application, Quill Grammar, contains all of the data about the lesson (the prompts, the practice questions, etc.)
+
+
+- Lesson data is stored in Compass and is parsed by Quill. 
+- quill queries api through that data
+- lesson passes id used to look up that information
+
+
 ## Setup Oauth
 
 Currently, you must work with a Quill admin to create your oauth account. Send
