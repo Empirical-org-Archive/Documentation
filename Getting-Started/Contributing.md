@@ -17,8 +17,10 @@ We love pull requests. Here's a quick guide:
    [Install Guide](/Getting-Started/Install/Install%20Guide.md)
    you will probably want to modify the submodules to point to your new fork(s).
 
-2. Run the tests. We only take pull requests with passing tests, and it's great
-to know that you have a clean slate: `bundle && rake`
+2. __Run the tests.__ 
+
+   We only take pull requests with passing tests, and it's great
+   to know that you have a clean slate: `bundle && rake`
 
 3. __Add a test for your change.__
 
@@ -32,7 +34,7 @@ to know that you have a clean slate: `bundle && rake`
 
 4. __Make the test pass.__
 
-5. Push to your fork and submit a pull request.
+5. __Push to your fork and submit a pull request.__
 
 
 At this point you're waiting on us. We like to at least comment on, if not accept, pull requests within three business days (and, typically, one business day). Quinn and Josh will review pull requests and provide feedback on code quality. We may suggest some changes or improvements or alternatives. Large commits will be reviewed in a pair programming session.
