@@ -12,7 +12,7 @@ We love pull requests. Here's a quick guide:
 1. __Fork the repo.__
 
    If you followed the instructions in the 
-   (Install Guide)[/Getting-Started/Install/Install%20Guide.md] 
+   [Install Guide](/Getting-Started/Install/Install%20Guide.md)
    you will probably want to modify the submodules to point to your new fork(s).
 
 2. Run the tests. We only take pull requests with passing tests, and it's great
