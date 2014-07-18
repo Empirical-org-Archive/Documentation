@@ -11,7 +11,7 @@
 
 - [Install Process](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Install%20Guide.md)
 - [Code High Level Overview](https://github.com/empirical-org/Documentation/blob/master/Compass/Code-Overview/Compass%20Code%20Overview.md)
-- API Design 
+- [API Design](https://github.com/empirical-org/Documentation/blob/master/Compass/API-Design/API%20Docs.md)
 - [Contributing Guidelines](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Contributing.md)
 - [Collaboration Guidelines](https://github.com/empirical-org/Documentation/blob/master/Cofactor/Guide%20-%20How%20We%20Build%20Together.md)
 
@@ -26,11 +26,11 @@
 ## Code Tour
 *Ready to start hacking? Learn about our code base.*
 
-A walking tour through the user's experience. (in development).
+[A walking tour of the site's architecture.](https://github.com/empirical-org/Documentation/blob/master/Compass/Compass-QA-Testing/Integration-Testing.md)
 
 [A High level overview of our code base.](https://github.com/empirical-org/Documentation/blob/master/Compass/Code-Overview/Compass%20Code%20Overview.md)
 
-How to build a Compass App. (in development).
+[How to build a Compass App.](https://github.com/empirical-org/Documentation/blob/master/Compass/API-Design/API%20Docs.md)
 
 ## Install Process
 *How the heck do I get this running?*
