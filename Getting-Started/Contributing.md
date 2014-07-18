@@ -20,11 +20,17 @@ We love pull requests. Here's a quick guide:
 2. Run the tests. We only take pull requests with passing tests, and it's great
 to know that you have a clean slate: `bundle && rake`
 
-3. Add a test for your change. Only refactoring and documentation changes
-require no new tests. If you are adding functionality or fixing a bug, we need
-a test!
+3. __Add a test for your change.__
 
-4. Make the test pass.
+   Only refactoring and documentation changes
+   require no new tests. If you are adding functionality or fixing a bug, we need
+   a test!
+   
+   The only exception to this would be some frontend changes. Since we don't currently
+   use a javascript testing framework or an acceptance testing framework, some frontend 
+   changes may not require any tests (please heir on the side of testing, though).
+
+4. __Make the test pass.__
 
 5. Push to your fork and submit a pull request.
 
