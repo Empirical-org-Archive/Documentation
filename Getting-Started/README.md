@@ -2,8 +2,19 @@
 
 *This page links to everything you need to know to get started with Quill. Please explore our docs!*
 
-- **Mailing List:** [Compass developers mailing list.](https://groups.google.com/forum/#!forum/empirical-compass)
+- **Mailing List:** [Compass developer's mailing list.](https://groups.google.com/forum/#!forum/empirical-compass)
 - **Real Time Chat:** [Join us in the Compass Gitter room.](https://gitter.im/empirical-org/Compass)
+
+##Essential Docs for Developers
+
+*If you are writing code please read these docs.*
+
+- [Install Process](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Install%20Guide.md)
+- [Code High Level Overview](https://github.com/empirical-org/Documentation/blob/master/Compass/Code-Overview/Compass%20Code%20Overview.md)
+- API Design 
+- [Contributing Guidelines](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Contributing.md)
+- [Collaboration Guidelines](https://github.com/empirical-org/Documentation/blob/master/Cofactor/Guide%20-%20How%20We%20Build%20Together.md)
+
 
 ## Mission
 
