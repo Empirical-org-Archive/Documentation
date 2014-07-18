@@ -3,7 +3,7 @@
 ## Setup Oauth
 
 Currently, you must work with a Quill admin to create your oauth account. Send
-your application info to help@quill.org and you will receive a consumer token
+your application info to hello@quill.org and you will receive a consumer token
 and secret. You can also use the
 [Compass-Module-Environment](http://github.com/empirical-org/Compass-Module-Environment)
 to setup your own Compass and develop your application against that. This
