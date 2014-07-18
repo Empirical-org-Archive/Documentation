@@ -36,6 +36,10 @@ We love pull requests. Here's a quick guide:
 
 5. __Push to your fork and submit a pull request.__
 
+   Please mention any relevant issue, but don't worry about any naming convention for 
+   the branches. As long as the pull request is adequately informative that should be 
+   good enough.
+
 
 At this point you're waiting on us. We like to at least comment on, if not accept, pull requests within three business days (and, typically, one business day). Quinn and Josh will review pull requests and provide feedback on code quality. We may suggest some changes or improvements or alternatives. Large commits will be reviewed in a pair programming session.
 
