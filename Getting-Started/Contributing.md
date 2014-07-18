@@ -15,7 +15,12 @@ We love pull requests. Here's a quick guide:
 
    If you followed the instructions in the 
    [Install Guide](/Getting-Started/Install/Install%20Guide.md)
-   you will probably want to modify the submodules to point to your new fork(s).
+   you will probably want to modify the submodules to point to your new fork(s). One option would be:
+   
+   ~~~
+   git rename origin upstream
+   git remote add origin git@your-fork
+   ~~~
 
 2. __Run the tests.__ 
 
