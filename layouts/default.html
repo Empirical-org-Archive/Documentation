@@ -28,7 +28,6 @@
   <div class="large-12 columns">
     <ul class="breadcrumbs">
       <% breadcrumbs.each do |crumb| %>
-
         <li <% if crumb[:current] %>class="current"<% end %>><a href="<%= crumb[:id] %>"><%= crumb[:name] %></a></li>
       <% end %>
     </ul>

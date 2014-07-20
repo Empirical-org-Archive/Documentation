@@ -15,9 +15,8 @@
 
 foundation_css = Pathname.new(Bundler.definition.specs.find{|s| s.name == 'foundation-rails'}.full_gem_path).join('vendor/assets/stylesheets')
 
-compile '*' do
-  case item[:extension]
-  when 'md'
+module RenderMarkdown
+  def render_markdown this
     renderer = Class.new(Redcarpet::Render::HTML) do
       def add_code_tags(code, lang)
         code = code.sub(/<pre>/, "<pre><code class=\"#{lang} language-#{lang}\" data-lang=\"#{lang}\">")
@@ -33,7 +32,16 @@ compile '*' do
       end
     end
 
-    filter :redcarpet, options: {fenced_code_blocks: true}, renderer: renderer
+    this.filter :redcarpet, options: {fenced_code_blocks: true}, renderer: renderer
+  end
+
+  extend self
+end
+
+compile '*' do
+  case item[:extension]
+  when 'md'
+    RenderMarkdown.render_markdown(self)
   when 'html'
     filter :erb
   when 'scss'
@@ -58,6 +66,22 @@ end
 route '/static/*/' do
   # /static/foo.html/ → /foo.html
   item.identifier[7..-2]
+end
+
+# md ext
+
+compile '*', rep: 'md_with_ext' do
+  if item[:extension] == 'md' && item.identifier.chop.length > 0
+    RenderMarkdown.render_markdown(self)
+    layout 'default'
+    filter :relativize_paths, type: :html
+  end
+end
+
+route '*', rep: 'md_with_ext' do
+  if item[:extension] == 'md' && item.identifier.chop.length > 0
+    item.identifier.chop + '.md/index.html'
+  end
 end
 
 route '*' do
