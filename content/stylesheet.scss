@@ -9,6 +9,14 @@
   padding: 1em 0;
 }
 
+.nav-links {
+  font-size: 12px;
+  a {
+    margin-left: 10px;
+    display: inline-block;
+  }
+}
+
 .side-nav {
   padding: 0;
   border-radius: 3px;
@@ -45,5 +53,5 @@ code {
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 2px 4px;
-  pre & { border: none ; padding: none }
+  pre & { border: none ; padding: 0  }
 }

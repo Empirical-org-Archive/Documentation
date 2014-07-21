@@ -13,3 +13,4 @@ gem 'sass'
 gem 'foundation-rails', require: false
 gem 'nokogiri'
 gem 'pygments.rb', require: 'pygments'
+gem 'slim'

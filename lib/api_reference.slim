@@ -1,0 +1,61 @@
+h1= API.config['root']['title']
+
+p= API.config['root']['description']
+
+- API.config['root'].except('title', 'description').each do |name, config|
+  h2 #{name.humanize} <code>/#{name}/</code>
+
+  p= config['description']
+
+  - unless config['options'].try(:[], 'singular')
+    h4 List available #{name.humanize.downcase}
+    pre: code GET /#{name}
+    br
+    strong Example response
+
+    pre: code
+      | [
+          {
+            #{config['attributes'].map{|a,v| "#{a}: 'value'"}.join("\n    ")}
+          }
+        ]
+
+    h4 Create #{name.singularize.humanize.downcase}
+    pre: code POST /#{name}
+    br
+    strong Example response
+
+    pre: code
+      | {
+          #{config['attributes'].map{|a,v| "#{a}: 'value'"}.join("\n  ")}
+        }
+
+    h4 Get #{name.singularize.humanize.downcase}
+    pre: code GET /#{name}/:id
+    br
+    strong Example response
+
+    pre: code
+      | {
+          #{config['attributes'].map{|a,v| "#{a}: 'value'"}.join("\n  ")}
+        }
+
+    h4 Update given #{name.singularize.humanize.downcase}
+    pre: code PUT /#{name}/:id
+    br
+    strong Example response
+
+    pre: code
+      | {
+          #{config['attributes'].map{|a,v| "#{a}: 'value'"}.join("\n  ")}
+        }
+
+    h4 Delete given #{name.singularize.humanize}
+    pre: code GET /#{name}/:id
+    br
+    strong Example response
+
+    pre: code
+      | {
+          #{config['attributes'].map{|a,v| "#{a}: 'value'"}.join("\n  ")}
+        }

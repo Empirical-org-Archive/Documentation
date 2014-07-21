@@ -41,6 +41,8 @@ data_sources:
   - 
     type: static
     items_root: /static/
+  - 
+    type: api
 
 # Configuration for the “check” command, which run unit tests on the site.
 checks:

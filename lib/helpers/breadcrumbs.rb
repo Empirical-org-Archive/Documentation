@@ -1,7 +1,7 @@
 module BreadcrumbsHelper
   def breadcrumbs
-    parents = if @item[:parents].length == 0 || !@item[:parents]
-      ['Docs']
+    parents = if !@item[:parents] || @item[:parents].length == 0 
+      if @item[:github] then ['Docs'] else [] end
     else
       @item[:parents]
     end

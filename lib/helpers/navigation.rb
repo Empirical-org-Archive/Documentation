@@ -1,6 +1,7 @@
 module NavigationHelper
   def navigation_title
     return item[:id] if item[:dir]
+    return API.config['root']['title'] if item[:api]
     item[:parents].last
   end
 
@@ -21,6 +22,8 @@ module NavigationHelper
   end
 
   def github_link item
+    return item[:github_link] if item[:github_link]
+
     filename = if item[:dir]
       Pathname.new('/').join(*(item[:parents] - ['Docs']), item[:filename] || '/', 'README.md').to_s
     else

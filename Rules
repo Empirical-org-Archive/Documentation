@@ -44,6 +44,8 @@ compile '*' do
     RenderMarkdown.render_markdown(self)
   when 'html'
     filter :erb
+  when 'slim'
+    filter :slim
   when 'scss'
     filter :sass, syntax: :scss, load_paths: [NanocRoot.root.join('lib/scss'), foundation_css]
   end

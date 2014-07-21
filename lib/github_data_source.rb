@@ -78,7 +78,8 @@ class GithubDataSource < Nanoc::DataSource
         attrs = {
           filename: filename,
           parents: paths,
-          extension: 'md'
+          extension: 'md',
+          github: true
         }
 
         if file.type == 'tree'
@@ -91,7 +92,6 @@ class GithubDataSource < Nanoc::DataSource
           rescue Octokit::NotFound => e
             item = Nanoc::Item.new('', file.attrs.merge(attrs), attrs[:id], binary: false)
           end
-
 
           loc[item[:id]] ||= {}
           loc[item[:id]][:item] = item
@@ -110,19 +110,19 @@ class GithubDataSource < Nanoc::DataSource
       end
 
       blob = octokit.contents('empirical-org/Documentation', path: 'README.md')
-      item = Nanoc::Item.new(Base64.decode64(blob.content), {extension: 'md', parents: [], dir: true, root: true, id: 'Docs'}, '/', binary: false)
+      item = Nanoc::Item.new(Base64.decode64(blob.content), {extension: 'md', parents: [], dir: true, root: true, id: 'Docs', github: true}, '/', binary: false)
       @items.unshift(res['Docs'][:item] = item)
 
       @sitemap = res
     end
 
     def files_for item
+      return [] unless item[:github]
       nav_for(item)[:files] || []
-    rescue
-      binding.pry
     end
 
     def folders_for item
+      return [] unless item[:github]
       nav_for(item).except(:files, :item)
     end
 
