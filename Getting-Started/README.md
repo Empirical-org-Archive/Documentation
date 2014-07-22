@@ -12,6 +12,7 @@
 - [Install Process](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Install%20Guide.md)
 - [Compass High Level Overview](https://github.com/empirical-org/Documentation/blob/master/Compass/Code-Overview/Compass%20Code%20Overview.md) Compass is our LMS for assigning activities and viewing results. 
 - [API Design](https://github.com/empirical-org/Documentation/blob/master/Compass/API-Design/API%20Docs.md) This doc explains how Compass communicates with our applications. 
+- [API Reference](http://docs.empirical.org/api-reference/) A guide for API calls. 
 - [Contributing Guidelines](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Contributing.md) Our open source code development workflow. 
 - [Collaboration Guidelines](https://github.com/empirical-org/Documentation/blob/master/Cofactor/Guide%20-%20How%20We%20Build%20Together.md) How we communicate and share information. 
 
