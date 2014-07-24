@@ -53,7 +53,7 @@ Projects we are currently working on. (in development).
 
 [Code Contribution Guidelines](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Contributing.md)
 
-[A complete list of all of the tools and services we use.](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Common%20Questions.md)
+[A complete list of all of the tools and services we use.](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Common%20Questions.md#what-is-your-toolset)
 
 
 
