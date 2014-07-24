@@ -28,26 +28,34 @@ git clone https://github.com/empirical-org/Compass-Module-Environment.git
 cd Compass-Module-Environment
 git submodule init && git submodule update && cd Compass && git submodule init && git submodule update && cd ../Compass-API && git submodule init && git submodule update && cd ..
 docker-osx shell # wait for VM to boot
+~~~
+
+Build the development environment images. You will only have to do this once. The next time you start the environment, you can omit this command unless a new gem has been added to the project as a dependency.
+
+~~~ sh
+fig build
+~~~
+
+Start the two database containers.
+
+~~~ sh
+fig up -d compassdb quilldb
+~~~
+
+Run the database migrations.
+
+~~~ sh
+fig run compass rake db:create db:migrate db:seed
+fig run quill rake db:create db:migrate db:seed
+~~~
+
+Start the rest of the application containers.
+
+~~~ sh
 fig up
 ~~~
 
-Open a new tab and run `docker-osx shell`
-
-~~~ sh
-cd Compass-Module-Environment/
-fig run compass rake db:migrate db:seed
-fig run quill rake db:migrate db:seed
-~~~
-
-Return to the previous tab and restart fig:
-
-~~~ sh
-^C # wait for fig to exit
-find . -name server.pid -delete
-fig up
-~~~
-
-Run `http://localdocker:3000/`
+Open `http://localdocker:3000/` in your web browser.
 
 ## Finished! Next steps
 
