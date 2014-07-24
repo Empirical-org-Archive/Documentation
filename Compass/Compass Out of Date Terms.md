@@ -19,7 +19,9 @@ The Quill Grammar app is an app that provides our grammar activities.
 
 #### Empirical-Grammar-Staging -> Compass-Staging
 
+## On GitHub
 
+#### Quill-Lessons Repo -> Quill Grammar
 
 ## In the Code Base
 
