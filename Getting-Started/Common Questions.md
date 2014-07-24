@@ -20,23 +20,45 @@ Our contributors tend to volunteer between 2 to 15 hours per month. Some of our 
 Our volunteer contributors tend to be online and availabe between 5 pm and 10 pm EST. Quinn, our lead developer, is typically available between 8 am and 5 pm EST.
 
 
-### What is your toolset?
+### Which languages does you use?
 
-**Tech Stack**
-- Ruby on Rails
+**Languages**
+- Javascript 
+- Slim - A templating language for generating HTML. 
+- SCSS - CSS extension language. 
 - PostgresSQL
-- Backbone.js
-- Redis
+- Ruby
 
-**Installation**
-- Vagrant + VM Ware
-- Docker
+**Frameworks**
+- Rails - The web framework
+- Bootstrap - We use a customizer version of bootstrap 2. 
+- jQuery - Used for manipulating DOM events
+
+**Compass API**
+- Doorkeeper - Oauth provider framework
+
+**Quill Grammar App**
+- Backbone.js - Used for rendering the student feedback on stories.
+- Parslet - Used to build the syntax for the passage proofreading. 
+
+
+
+### What is your toolset?
 
 **Hosting**
 - **Heroku** - Site hosting
 - **Amazon Web Services** - Hosting images and backups through S3.
 - **Fastly** - Serves as a CDN for delivering image assets. 
 - **Zerigo** - Point the DNS to a Domain
+- **Iron.io** - Caching service. (Access through Heroku account). 
+- **Firebase **- Real Time pairing of students for collaborative activities.  
+
+**Authentication**
+- OAuth.io - Authentication service? 
+
+**Emails**
+- MailChimp - Newsletter Signup Email.
+- Mailgun - Transactional emails. (Access through Heroku account). 
 
 **Monitoring**
 - **New Relic** - Monitor lag spikes. 
@@ -44,6 +66,12 @@ Our volunteer contributors tend to be online and availabe between 5 pm and 10 pm
 - **Logentries** - Reports errors, including timeout errors. 
 - **HireFire** - Automatically scales the number of dynos to handle peak load times. 
 - **Librato** - Provides info on the number of connections and latency. 
+
+**Code Quality Checks**
+- CodeClimate - Automated code review. 
+- Travis - Continuous integration. 
+- Drone.io - Continous integration. Moving to Drone. 
+- Gemnasium - When our code needs up to be upgraded. 
 
 **Cofactor Collaboration**
 
