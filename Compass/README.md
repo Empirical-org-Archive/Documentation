@@ -11,7 +11,7 @@ Empirical Core is a learning management system built for interactive education. 
 [![Build Status](https://drone.io/github.com/empirical-org/Compass/status.png)](https://drone.io/github.com/empirical-org/Compass/latest)
 [![Coverage Status](https://coveralls.io/repos/empirical-org/Compass/badge.png?branch=master)](https://coveralls.io/r/empirical-org/Compass?branch=master)
 [![Dependency Status](https://gemnasium.com/empirical-org/Compass.png)](https://gemnasium.com/empirical-org/Compass)
-
+[![Inline docs](http://inch-ci.org/github/empirical-org/empirical-core.png?branch=develop)](http://inch-ci.org/github/empirical-org/empirical-core)
 
 
 
