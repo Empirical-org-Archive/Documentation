@@ -1,4 +1,4 @@
-#Compass Out of Date Terms
+#Empirical Core Out of Date Terms
 
 *Quill has evolved signficantly since its inception. Consquently, there are many out of date terms.*
 
@@ -13,11 +13,11 @@ We should refactor Compass to bring these terms up to update.**
 #### Quill Questions Module -> Quill Grammar
 The Quill Grammar app is an app that provides our grammar activities. 
 
-#### Quill API -> Compass API
+#### Quill API -> Compass API -> Empirical API
 
-#### Empirical-Grammar -> Compass
+#### Empirical-Grammar -> Compass -> Empirical Core
 
-#### Empirical-Grammar-Staging -> Compass-Staging
+#### Empirical-Grammar-Staging -> Compass-Staging -> Empirical-Core-Staging
 
 ## On GitHub
 
@@ -30,9 +30,9 @@ The Quill Grammar app has two components to it: a passage proofreading excercise
 
 #### Practice Questions -> Sentence Writing
 
-##Distinction - Quill vs. Compass 
+##Distinction - Quill vs. Empirical Core 
 
 This is perhaps the most confusing distinction, so it gets special treatment here. Compass is our learning management system. With Compass teachers assign activities and view results. 
 
-Quill is a branded version of Compass focused on English writing activities. Over time we will introduce new branded sites focusing on different verticals, such as science and history. All of these various sites will be powered by Compass. As such, everything should be refered to as Compass, rather than as Quill. 
+Quill is a branded version of Compass focused on English writing activities. Over time we will introduce new branded sites focusing on different verticals, such as science and history. All of these various sites will be powered by Empirical Core. As such, everything should be refered to as Empirical Core, rather than as Quill. 
 
