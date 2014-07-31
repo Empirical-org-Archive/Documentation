@@ -1,4 +1,4 @@
-# Guide - QA Testing Compass
+# Guide - QA Testing Empirical Core
 
 ### Creating Accounts 
 1. Create New Teacher Account 
