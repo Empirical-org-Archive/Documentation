@@ -1,11 +1,11 @@
-# Welcome to Compass
+# Welcome to Empirical Core
 
-Compass is a learning management system built for interactive education. With Compass, teachers can assign learning activities and view results. 
+Empirical Core is a learning management system built for interactive education. With Empirical Core, teachers can assign learning activities and view results. 
 
 - **Getting Started:** [Start here with this doc.](/Getting-Started) 
-- **Cofactor Compass:** [Our project management HQ](http://www.empirical.org/cofactor/teams/compass)
-- **Mailing List:** [Compass developers mailing list.](https://groups.google.com/forum/#!forum/empirical-compass)
-- **Real Time Chat:** [Join us in the Compass Gitter room.](https://gitter.im/empirical-org/Compass)
+- **Cofactor Empirical Core:** [Our project management HQ](http://www.empirical.org/cofactor/teams/compass)
+- **Mailing List:** [Empirical Core developers mailing list.](https://groups.google.com/forum/#!forum/empirical-compass)
+- **Real Time Chat:** [Join us in the Empirical Core Gitter room.](https://gitter.im/empirical-org/Compass)
 
 [![Code Climate](https://codeclimate.com/github/empirical-org/Compass.png)](https://codeclimate.com/github/empirical-org/Compass)
 [![Build Status](https://drone.io/github.com/empirical-org/Compass/status.png)](https://drone.io/github.com/empirical-org/Compass/latest)
@@ -21,7 +21,5 @@ Compass is a learning management system built for interactive education. With Co
 Building with Docker
 --------
 
-You can run Compass locally by using a Docker Image and a Virtual Machine. 
+You can run Empirical Core locally by using a Docker Image and a Virtual Machine. 
 [Read the instructions](/Getting-Started/Install/Install%20Guide)
-
-
