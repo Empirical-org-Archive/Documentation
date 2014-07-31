@@ -34,7 +34,7 @@ Our volunteer contributors tend to be online and availabe between 5 pm and 10 pm
 - Bootstrap - We use a customizer version of bootstrap 2. 
 - jQuery - Used for manipulating DOM events
 
-**Compass API**
+**Empirical API**
 - Doorkeeper - Oauth provider framework
 
 **Quill Grammar App**
