@@ -56,6 +56,6 @@ You need to create a javascript event when an event is created, and an activity 
 
 It should do so automatically. 
 
-### How does the application send data back to Compass for creating an Activity?
+### How does the application send data back to Empirical Core for creating an Activity?
 
 Take data and move into the json object, and then post data using API.
