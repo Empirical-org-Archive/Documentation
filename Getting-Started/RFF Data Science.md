@@ -1,8 +1,6 @@
 # Quill Request for Fellows: Data Science
 
-[Quill.org](www.quill.org) is a platform for interactive writing activities. Our goal is to collaborate with a data scientist who can help us analyze how students develop their writing skills. 
-
-Quill presents students with ten minute activities that teach writing, grammar, and vocabulary skills. Quill was launched eight months ago, and we currently have 10,000 K-12 students using our activities. 
+[Quill.org](www.quill.org) is a platform for interactive writing activities. Our goal is to collaborate with a data scientist who can help us analyze how students develop their writing skills. Quill presents students with ten minute activities that teach writing, grammar, and vocabulary skills. Quill was launched eight months ago, and we currently have 10,000 K-12 students using our activities. 
 
 Quill is being built by the nonprofit organization [Empirical](www.empirical.org). Empirical is funded through the Literacy Courseware Challenge, a series of grants provided by the Bill & Melinda Gates Foundation. All of the activities are free to use, and Empirical provide enterprise level features as a premium service. Empirical is an open source organization and over fifty educators and developers have contributed code and lessons.
 
