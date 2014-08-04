@@ -9,7 +9,8 @@ Quill is being built by the nonprofit organization [Empirical](www.empirical.org
 ## Challenge #1: Best Practices in Data Collection 
 
 We are currently setting up our data collection systems, and it’d be great if we could review our system with a data scientist. In particular we are interested in three questions: 
-* Is there any obvious data we should be collecting that we are not? 
+* Is there any obvious data we should be collecting that we are not?
+* What are the best data collection and analysis practices in order to prevent bias and error?
 * How can we best connect [this demograhic data](http://nces.ed.gov/ccd/schoolsearch/) to our accounts? 
 * How can we ensure that we properly anonymizing data sets so that we're protecting student privacy while making our data sets available to researchers?
 
@@ -19,7 +20,7 @@ The United States’ education system is going through a major overhaul, where 4
 
 The Empirical team has built [150 lessons](www.quill.org/lessons) from the Common Core language section and have found that the standards do not reflect the actual cognitive development of students. For example, the Common Core dictates that students should learn the difference between “who” and “whom” in the fourth grade, while we have found that students often learn this concept in the tenth grade. 
 
-We’d like to collaborate with a data scientist who can analyze how students are building their writing skills. We could then use these findings to make recommendations for how the Common Core could be improved. We strongly believe in the Common Core, but we also recognize that it needs to be improved. This is an opportunity to impact a set of standards used by millions of students. 
+We’d like to collaborate with a data science team to analyze how students are building their writing skills. The team would focus on a data-driven assessment of the strengths and weaknesses of the Common Core language standards. We could then use these findings to make recommendations for how the Common Core could be improved. We strongly believe in the Common Core, but we also recognize that it needs to be improved. This is an opportunity to impact a set of standards used by millions of students. 
 
 ## Challenge #3: Typing Speeds and Method of Input
 
