@@ -21,10 +21,10 @@ __High Level Overview:__ Docker is a linux container that contains our entire de
 
 If you are using a distribution of linux it is not necessary to use docker-osx. All of the commands should work exactly the same if you just skip over the docker-osx lines.
 
-## Download Compass
+## Download Empircal Core
 
 ~~~ sh
-git clone https://github.com/empirical-org/Compass-Module-Environment.git
+git clone https://github.com/empirical-org/Empirical-Core-Module-Environment.git
 cd Compass-Module-Environment
 git submodule init && git submodule update && cd Compass && git submodule init && git submodule update && cd ../Compass-API && git submodule init && git submodule update && cd ..
 docker-osx shell # wait for VM to boot
