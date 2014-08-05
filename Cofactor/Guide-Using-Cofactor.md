@@ -43,7 +43,7 @@ Every Cofactor team has its own mailing list. You can subscribe to the mailing l
 The mailing list should be used to discuss new ideas, meeting times, and help requests. Once a specific task is under development, the discussion should be handled through the GitHub issue. 
 
 ## Questions
-Certain Cofactor teams, such as the Compass team, have a Questions mailing list. This mailing list is reserved for asking questions about getting started with the team.  Generally speaking, these are questions about to install or edit the code. If a team does not have a "Questions" function, a contributor should ask questions through the "Mailing List" function.  
+Certain Cofactor teams, such as the Empirical Core team, have a Questions mailing list. This mailing list is reserved for asking questions about getting started with the team.  Generally speaking, these are questions about to install or edit the code. If a team does not have a "Questions" function, a contributor should ask questions through the "Mailing List" function.  
 
 ## Text Editor
 Our text editor, called Contentify, allows multiple people to edit a single document, similar to Google Docs. The main difference is that Contentify uses markdown to style text. Writers more comfortable using Google Docs can create Google Docs and share the file in the appropriate folder. 
