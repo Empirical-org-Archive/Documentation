@@ -20,10 +20,10 @@ git remote add origin git@your-fork
 
 # API Design
 
-#### How do lessons fit in with compass? How do the two applications communicate?
+#### How do lessons fit in with Empirical Core? How do the two applications communicate?
 
-[See this doc](https://github.com/empirical-org/Documentation/blob/master/Compass/API-Design/API%20Docs.md)
-- lesson data is stored in compass and is parsed by quill
+[See this doc](https://github.com/empirical-org/Documentation/blob/master/empirical-core/API-Design/API%20Docs.md)
+- lesson data is stored in Empirical Core and is parsed by quill
 - quill queries api through that data
 - lesson passes id used to look up that information
 
