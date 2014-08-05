@@ -24,7 +24,7 @@ If you are using a distribution of linux it is not necessary to use docker-osx. 
 ## Download Empircal Core
 
 ~~~ sh
-git clone https://github.com/empirical-org/Empirical-Core-Module-Environment.git
+git clone https://github.com/empirical-org/Compass-Core-Module-Environment.git
 cd Compass-Module-Environment
 git submodule init && git submodule update && cd Compass && git submodule init && git submodule update && cd ../Compass-API && git submodule init && git submodule update && cd ..
 docker-osx shell # wait for VM to boot
