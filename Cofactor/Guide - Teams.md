@@ -7,9 +7,9 @@
 *These teams are focused on building the the platform that delivers the interactive activities and the knowledge engine that coordinates our development.*
 
 
-### Compass
+### Empirical Core
 
-Compass is our learning management system for organizing and presenting our activities. All of our core back end development is through Compass. [View the Compass team.](https://github.com/empirical-org/Documentation/tree/master/Compass)
+Empirical Core is our learning management system for organizing and presenting our activities. All of our core back end development is through Empirical Core. [View the Empirical Core team.](https://github.com/empirical-org/Documentation/tree/master/Empirical-Core)
 
 
 
