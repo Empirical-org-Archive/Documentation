@@ -1,17 +1,17 @@
-# Start Here: Welcome to Compass!
+# Start Here: Welcome to Empirical Core!
 
 *This page links to everything you need to know to get started with Quill. Please explore our docs!*
 
-- **Mailing List:** [Compass developer's mailing list.](https://groups.google.com/forum/#!forum/empirical-compass)
-- **Real Time Chat:** [Join us in the Compass Gitter room.](https://gitter.im/empirical-org/Compass)
+- **Mailing List:** [Empirical Core developer's mailing list.](https://groups.google.com/forum/#!forum/empirical-compass)
+- **Real Time Chat:** [Join us in the Empirical Core Gitter room.](https://gitter.im/empirical-org/Compass)
 
 ##Essential Docs for Developers
 
 *If you are writing code please read these docs.*
 
 - [Install Process](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Install%20Guide.md)
-- [Compass High Level Overview](https://github.com/empirical-org/Documentation/blob/master/Compass/Code-Overview/Compass%20Code%20Overview.md) Compass is our LMS for assigning activities and viewing results. 
-- [API Design](https://github.com/empirical-org/Documentation/blob/master/Compass/API-Design/API%20Docs.md) This doc explains how Compass communicates with our applications. 
+- [Empirical Core High Level Overview](https://github.com/empirical-org/Documentation/blob/master/Empirical-Core/Code-Overview/Empirical%20Core%20Overview.md) Empirical Core is our LMS for assigning activities and viewing results. 
+- [API Design](https://github.com/empirical-org/Documentation/blob/master/Empirical-Core/API-Design/API%20Docs.md) This doc explains how Empirical Core communicates with our applications. 
 - [API Reference](http://docs.empirical.org/api-reference/) A guide for API calls. 
 - [Contributing Guidelines](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Contributing.md) Our open source code development workflow. 
 - [Collaboration Guidelines](https://github.com/empirical-org/Documentation/blob/master/Cofactor/Guide%20-%20How%20We%20Build%20Together.md) How we communicate and share information. 
@@ -27,11 +27,11 @@
 ## Code Tour
 *Ready to start hacking? Learn about our code base.*
 
-[A walking tour of the site's architecture.](https://github.com/empirical-org/Documentation/blob/master/Compass/Compass-QA-Testing/Integration-Testing.md)
+[A walking tour of the site's architecture.](https://github.com/empirical-org/Documentation/blob/master/Empirical-Core/Empirical-Core-QA-Testing/Integration-Testing.md)
 
-[A High level overview of our code base.](https://github.com/empirical-org/Documentation/blob/master/Compass/Code-Overview/Compass%20Code%20Overview.md)
+[A High level overview of our code base.](https://github.com/empirical-org/Documentation/blob/master/Empirical-Core/Code-Overview/Empirical%20Core%20Overview.md)
 
-[How to build a Compass App.](https://github.com/empirical-org/Documentation/blob/master/Compass/API-Design/API%20Docs.md)
+[How to build a Empirical Core App.](https://github.com/empirical-org/Documentation/blob/master/Empirical-Core/API-Design/API%20Docs.md)
 
 ## Install Process
 *How the heck do I get this running?*
