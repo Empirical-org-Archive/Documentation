@@ -1,9 +1,9 @@
-#Compass Out of Date Terms
+#Empirical Core Out of Date Terms
 
 *Quill has evolved signficantly since its inception. Consquently, there are many out of date terms.*
 
 **This document outlines all of the dated terms. When you see a questionable term, post it here. 
-We should refactor Compass to bring these terms up to update.**
+We should refactor Empirical Core to bring these terms up to update.**
 
 
 #### (The current term) -> (The proper term)
