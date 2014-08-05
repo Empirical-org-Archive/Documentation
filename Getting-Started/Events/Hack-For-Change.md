@@ -12,20 +12,20 @@ We are currently building **Quill**, a web application that provides interactive
 
 1. Choose A Team
 2. 
-3. Install The Code - Click [here](https://github.com/empirical-org/Compass#building) to read the install guide. 
-4. Contributing Guidelines - Click [here](https://github.com/empirical-org/Compass/blob/master/CONTRIBUTING.md) to read the contributing guidelines. 
+3. Install The Code - Click [here](https://github.com/empirical-org/empirical-core#building) to read the install guide. 
+4. Contributing Guidelines - Click [here](https://github.com/empirical-org/empirical-core/blob/master/CONTRIBUTING.md) to read the contributing guidelines. 
 
 ## Hack for Change Roadmap
 *This list contains all of the current teams and projects we'd like to accomplish.* 
 
-### Compass Team
-*Compass is our interface for assigning lessons and viewing results.*
+### Empirical-Core Team
+*Empirical-Core is our interface for assigning lessons and viewing results.*
 
-[View the Compass Team.](http://www.empirical.org/cofactor/teams/compass) 
+[View the Empirical-Core Team.](http://www.empirical.org/cofactor/teams/compass) 
 
-[View the Milestone.](https://github.com/empirical-org/Compass/issues?milestone=12&page=1&state=open)
-1. **Compass Interface Upgrades.** There is a series of fixes that need to be made to Compass and Quill. This is a good team for less experienced developers. [The Milestone.](https://github.com/empirical-org/Compass/issues?milestone=12&page=1&state=open)
-2. **GitHub as a CMS.** We host all of our lessons as text files in GitHub. Users can create and edit lessons via pull requests. The content is written to the database via headers. [The issue.](https://github.com/empirical-org/Compass/issues/230)
+[View the Milestone.](https://github.com/empirical-org/empirical-core/issues?milestone=12&page=1&state=open)
+1. **Empirical Core Interface Upgrades.** There is a series of fixes that need to be made to Empirical Core and Quill. This is a good team for less experienced developers. [The Milestone.](https://github.com/empirical-org/empirical-core/issues?milestone=12&page=1&state=open)
+2. **GitHub as a CMS.** We host all of our lessons as text files in GitHub. Users can create and edit lessons via pull requests. The content is written to the database via headers. [The issue.](https://github.com/empirical-org/empirical-core/issues/230)
 3. **Review API Design.**
 
 
