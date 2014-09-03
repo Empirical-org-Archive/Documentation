@@ -10,6 +10,7 @@
 
 ## 2. Create a name for the Branch. 
 
+![screen shot 2014-09-03 at 2 29 41 pm](https://cloud.githubusercontent.com/assets/3667179/4139490/3c1d612c-339b-11e4-977a-a5a7e1b1681e.png)
 
 ### Naming Guidelines
 
