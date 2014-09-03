@@ -49,7 +49,7 @@ Learn more about [Git branch naming.](http://nvie.com/posts/a-successful-git-bra
 
 ## 8. Press Create Pull Request
 
-*Once you've created the pull request, please reach out to us on our [mailing list](https://groups.google.com/forum/#!forum/empirical-core) or on [Gitter chat](https://gitter.im/empirical-org). 
+*Once you've created the pull request, please reach out to us on our [mailing list](https://groups.google.com/forum/#!forum/empirical-core) or on [Gitter chat](https://gitter.im/empirical-org).*
 
 ![screen shot 2014-09-03 at 2 32 44 pm](https://cloud.githubusercontent.com/assets/3667179/4139471/0fa45088-339b-11e4-9c3b-284928846027.png)
 
