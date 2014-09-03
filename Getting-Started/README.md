@@ -3,7 +3,7 @@
 *This page links to everything you need to know to get started with Quill. Please explore our docs!*
 
 - **Mailing List:** [Empirical Core developer's mailing list.](https://groups.google.com/forum/#!forum/empirical-compass)
-- **Real Time Chat:** [Join us in the Empirical Core Gitter room.](https://gitter.im/empirical-org/Compass)
+- **Real Time Chat:** [Join us in the Empirical Core Gitter room.](https://gitter.im/empirical-org/)
 
 ##Essential Docs for Developers
 
