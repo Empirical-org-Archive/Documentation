@@ -6,11 +6,12 @@
 
 *Navigate to the code you want to edit, and then open up the feature menu.*
 
-![screen shot 2014-09-03 at 2 29 32 pm](https://cloud.githubusercontent.com/assets/3667179/4139321/860dff28-3399-11e4-99ec-53996fb20705.png)
+![screen shot 2014-09-03 at 2 56 08 pm](https://cloud.githubusercontent.com/assets/3667179/4139587/371fb7d2-339c-11e4-9b16-241f3422638f.png)
 
 ## 2. Create a name for the Branch. 
 
-![screen shot 2014-09-03 at 2 29 41 pm](https://cloud.githubusercontent.com/assets/3667179/4139490/3c1d612c-339b-11e4-977a-a5a7e1b1681e.png)
+![screen shot 2014-09-03 at 2 56 19 pm](https://cloud.githubusercontent.com/assets/3667179/4139593/4744aaaa-339c-11e4-9530-bae549728de4.png)
+
 
 ### Naming Guidelines
 
@@ -46,8 +47,12 @@ Learn more about [Git branch naming.](http://nvie.com/posts/a-successful-git-bra
 
 ![screen shot 2014-09-03 at 2 32 32 pm](https://cloud.githubusercontent.com/assets/3667179/4139466/feba9cfa-339a-11e4-8943-f65b9d7c9cf9.png)
 
-## 8. Again, Press Create Pull Request
+## 8. Press Create Pull Request
+
+*Once you've created the pull request, please reach out to us on our [mailing list](https://groups.google.com/forum/#!forum/empirical-core) or on [Gitter chat](https://gitter.im/empirical-org). 
 
 ![screen shot 2014-09-03 at 2 32 44 pm](https://cloud.githubusercontent.com/assets/3667179/4139471/0fa45088-339b-11e4-9c3b-284928846027.png)
 
-## 9. Done! You've upgraded the code!
+## 9. Done! You've submitted a pull request. 
+
+*We'll review the pull request and, if needed, send feedback.*
