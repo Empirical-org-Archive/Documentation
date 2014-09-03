@@ -50,4 +50,4 @@ Learn more about [Git branch naming.](http://nvie.com/posts/a-successful-git-bra
 
 ![screen shot 2014-09-03 at 2 32 44 pm](https://cloud.githubusercontent.com/assets/3667179/4139471/0fa45088-339b-11e4-9c3b-284928846027.png)
 
-## 9. Done! You upgraded the code!
+## 9. Done! You've upgraded the code!
