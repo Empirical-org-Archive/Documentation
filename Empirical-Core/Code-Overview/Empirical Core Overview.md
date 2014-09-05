@@ -5,9 +5,6 @@
 
 
 # Introduction 
-### What do I do if I have a question that is not answered here?
-Please add your questions to the bottom of this markdown document via our GitHub page.
-
 
 ### What is Empirical Core?
 Empirical Core is a platform for educational games and activities. We integrate all of our activities into the Empirical Core Platform via the Empirical Core API. 
