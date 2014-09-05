@@ -16,10 +16,3 @@ Empirical Core is a learning management system built for interactive education. 
 
 
 
-
-
-Building with Docker
---------
-
-You can run Empirical Core locally by using a Docker Image and a Virtual Machine. 
-[Read the instructions](/Getting-Started/Install/Install%20Guide)
