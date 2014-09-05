@@ -46,7 +46,7 @@ The documentation for the API is stored within a YAML file. Included in the YAML
 
 
 ### What data fields do you employ?
-[Please see this document for a complete overview of the data structure of our API and Empirical Core.](https://github.com/empirical-org/Documentation/blob/master/Compass/API-Design/API%20Docs.md)
+[Please see this document for a complete overview of the data structure of our API and Empirical Core.](http://docs.empirical.org/api-reference/)
 
 ### Universal Fields for all Activities
 
