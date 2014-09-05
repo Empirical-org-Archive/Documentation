@@ -1,6 +1,6 @@
 # Instant Code Development with Codio
 
-**Installing Rails and Postgres can result in troubleshooting issues. Codio.com provides a cloud based enviornment. Empirical Core is pre-installed on the Codio machine with Rails and Postgres.**
+*Installing Rails and Postgres can result in troubleshooting issues. Codio.com provides a cloud based enviornment. Empirical Core is pre-installed on the Codio machine with Rails and Postgres.*
 
 ### 1. Log into Codio.com
 
