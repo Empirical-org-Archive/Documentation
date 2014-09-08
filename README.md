@@ -1,23 +1,23 @@
-# Welcome to the Empirical Docs HQ!
+# The Empirical Docs Dashboard
 
-*This page links to importaint resources.*
+*Use this page to access all of our important resources.*
 
-## My Issues Dashboard
+### My Issues Dashboard
 
 [Click here to access every issue assigned to you across all repos.](https://github.com/organizations/empirical-org/dashboard/issues?assigned=true&direction=asc&page=1&sort=created&state=open)
 
-## Key Documentation 
+### Key Documentation 
 
 - **Glossary of Terms:** [Every term we've created for our site.](https://docs.google.com/a/quill.org/document/d/1J-eYeMsXs0b3h1WASil_ymDMMb759TUy3Fde8oqPjPw/edit#)
 - **Code High Level Overviews:** [(1) Empirical Core Overview,](http://docs.empirical.org/Empirical-Core/Code-Overview/Empirical%20Core%20Overview/) [(2) API Overview,](http://docs.empirical.org/Empirical-Core/API-Design/API%20Docs/) [(3) API FAQ](http://docs.empirical.org/Empirical-Core/API-Design/API%20Docs%20FAQ/)
 - **API Reference:** [Our API reference guide.](http://docs.empirical.org/api-reference/)
 
 
-## Current Projects
+### Our Current Projects
 
 - **Project Tracker**: [This google doc provides a high level overview of what everyone's working on.](https://docs.google.com/a/quill.org/document/d/1YuyyuXFYP8ASrfoM6NqCGXSS1k90xIS18lafdEQ3pn8/edit)
 
-## Key Tools
+### Key Tools
 
 *This section links to all of the tools we use for each app.*
 
@@ -26,9 +26,7 @@
 - **Code Monitor:** [Librato Server Monitor](https://metrics.librato.com/dashboards/22363)
 
 
-
-
-## Getting Started
+### Getting Started
 
 - **Getting Started:** [Start here with this doc.](https://github.com/empirical-org/Documentation/tree/master/Getting-Started) 
 - **CLA:** [Please sign our CLA before contributing.] (https://www.clahub.com/agreements/empirical-org/Documentation)
