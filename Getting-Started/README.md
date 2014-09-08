@@ -28,6 +28,8 @@
 ## Code Tour
 *Ready to start hacking? Learn about our code base.*
 
+[A step by step guide with screenshots!](http://quill-discussion.uservoice.com/) Read our getting started guide for teachers to learn about our site's architecture. 
+
 [A walking tour of the site's architecture.](https://github.com/empirical-org/Documentation/blob/master/Empirical-Core/Empirical-Core-QA-Testing/Integration-Testing.md)
 
 [A High level overview of our code base.](https://github.com/empirical-org/Documentation/blob/master/Empirical-Core/Code-Overview/Empirical%20Core%20Overview.md)
