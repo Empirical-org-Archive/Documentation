@@ -39,9 +39,9 @@
 [Install the code locally using docker.](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Install%20Guide.md)
 
 ## Projects
-*What are we working on right now?* [https://docs.google.com/a/quill.org/document/d/1YuyyuXFYP8ASrfoM6NqCGXSS1k90xIS18lafdEQ3pn8/edit]
+*What are we working on right now?* 
 
-Projects we are currently working on. (in development).
+(Projects we are currently working on.)[https://docs.google.com/a/quill.org/document/d/1YuyyuXFYP8ASrfoM6NqCGXSS1k90xIS18lafdEQ3pn8/edit]
 
 [Starting projects for Open Source developers](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Open%20Source%20Volunteer%20Projects.md)
 
