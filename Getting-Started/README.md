@@ -10,8 +10,8 @@
 *If you are writing code please read these docs.*
 
 - [Install Process](https://github.com/empirical-org/Documentation/tree/master/Getting-Started/Install)
-- [Empirical Core High Level Overview](https://github.com/empirical-org/Documentation/blob/master/Empirical-Core/Code-Overview/Empirical%20Core%20Overview.md) Empirical Core is our LMS for assigning activities and viewing results. 
 - [Glossary of Terms](https://docs.google.com/a/quill.org/document/d/1J-eYeMsXs0b3h1WASil_ymDMMb759TUy3Fde8oqPjPw/edit#)
+- [Empirical Core High Level Overview](https://github.com/empirical-org/Documentation/blob/master/Empirical-Core/Code-Overview/Empirical%20Core%20Overview.md) Empirical Core is our LMS for assigning activities and viewing results. 
 - [API Design](https://github.com/empirical-org/Documentation/blob/master/Empirical-Core/API-Design/API%20Docs.md) This doc explains how Empirical Core communicates with our applications. 
 - [API Reference](http://docs.empirical.org/api-reference/) A guide for API calls. 
 - [Contributing Guidelines](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Contributing.md) Our open source code development workflow. 
@@ -28,7 +28,7 @@
 ## Code Tour
 *Ready to start hacking? Learn about our code base.*
 
-[A step by step guide with screenshots!](http://quill-discussion.uservoice.com/) Read our getting started guide for teachers to learn about our site's architecture. 
+[A step by step guide with screenshots.](http://quill-discussion.uservoice.com/) Read our getting started guide for teachers to learn about our site's architecture. 
 
 [A walking tour of the site's architecture.](https://github.com/empirical-org/Documentation/blob/master/Empirical-Core/Empirical-Core-QA-Testing/Integration-Testing.md)
 
@@ -39,7 +39,7 @@
 ## Install Process
 *How the heck do I get this running?*
 
-[Install the code locally using docker.](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Install%20Guide.md)
+[Installing the code locally.](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Install)
 
 ## Projects
 *What are we working on right now?* 
@@ -52,7 +52,9 @@
 ## Workflow
 *How do we collaborate and build together?*
 
-[Please Read: How We Work Together](https://github.com/empirical-org/Documentation/blob/master/Cofactor/Guide%20-%20How%20We%20Build%20Together.md)
+[Pull Request Workflow](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Pull%20Request%20Workflow.md)
+
+[How We Work Together](https://github.com/empirical-org/Documentation/blob/master/Cofactor/Guide%20-%20How%20We%20Build%20Together.md)
 
 [Code Contribution Guidelines](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Contributing.md)
 
