@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>A Brand New nanoc Site - </title>
+  <link rel="stylesheet" href="../stylesheet.css">
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.7.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="top-nav">
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="../">Compass Documentation</a>
+      <div class="right nav-links">
+        <a href="../">Documentation</a>
+        <a href=".">API Reference</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="breadcrumbs">
+      
+        <li class="current"><a href="">API Reference</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 columns">
+    <div id="main">
+      <h1>Compass API</h1>
+<p>API to interact with Compass. Include +access_token+ when authentication
+is required.
+</p>
+<h2>Activities <code>/activities/</code>
+</h2>
+<p>
+Programmatically interact with Activities on Compass. Typically only will
+read individual records from this resource.
+</p>
+<h4>List available activities</h4>
+<pre><code>GET /activities</code></pre>
+<br><strong>Example response</strong><pre><code>[
+  {
+    data: 'value'
+    name: 'value'
+    description: 'value'
+  }
+]</code></pre>
+<h4>Create activity</h4>
+<pre><code>POST /activities</code></pre>
+<br><strong>Example response</strong><pre><code>{
+  data: 'value'
+  name: 'value'
+  description: 'value'
+}</code></pre>
+<h4>Get activity</h4>
+<pre><code>GET /activities/:id</code></pre>
+<br><strong>Example response</strong><pre><code>{
+  data: 'value'
+  name: 'value'
+  description: 'value'
+}</code></pre>
+<h4>Update given activity</h4>
+<pre><code>PUT /activities/:id</code></pre>
+<br><strong>Example response</strong><pre><code>{
+  data: 'value'
+  name: 'value'
+  description: 'value'
+}</code></pre>
+<h4>Delete given Activity</h4>
+<pre><code>GET /activities/:id</code></pre>
+<br><strong>Example response</strong><pre><code>{
+  data: 'value'
+  name: 'value'
+  description: 'value'
+}</code></pre>
+<h2>Activity sessions <code>/activity_sessions/</code>
+</h2>
+<p>
+Compass activity sessions are used to store progress information about a
+user's interaction with an activity. Session's can be created without an
++access_token+ to allow anonymous access. If you have an ID of an
+anonymous session you should also be able to update it without an
++access_token+.
+</p>
+<h4>List available activity sessions</h4>
+<pre><code>GET /activity_sessions</code></pre>
+<br><strong>Example response</strong><pre><code>[
+  {
+    percentage: 'value'
+    time_spent: 'value'
+    state: 'value'
+    completed_at: 'value'
+    data: 'value'
+    temporary: 'value'
+    activity_uid: 'value'
+    anonymous: 'value'
+  }
+]</code></pre>
+<h4>Create activity session</h4>
+<pre><code>POST /activity_sessions</code></pre>
+<br><strong>Example response</strong><pre><code>{
+  percentage: 'value'
+  time_spent: 'value'
+  state: 'value'
+  completed_at: 'value'
+  data: 'value'
+  temporary: 'value'
+  activity_uid: 'value'
+  anonymous: 'value'
+}</code></pre>
+<h4>Get activity session</h4>
+<pre><code>GET /activity_sessions/:id</code></pre>
+<br><strong>Example response</strong><pre><code>{
+  percentage: 'value'
+  time_spent: 'value'
+  state: 'value'
+  completed_at: 'value'
+  data: 'value'
+  temporary: 'value'
+  activity_uid: 'value'
+  anonymous: 'value'
+}</code></pre>
+<h4>Update given activity session</h4>
+<pre><code>PUT /activity_sessions/:id</code></pre>
+<br><strong>Example response</strong><pre><code>{
+  percentage: 'value'
+  time_spent: 'value'
+  state: 'value'
+  completed_at: 'value'
+  data: 'value'
+  temporary: 'value'
+  activity_uid: 'value'
+  anonymous: 'value'
+}</code></pre>
+<h4>Delete given Activity session</h4>
+<pre><code>GET /activity_sessions/:id</code></pre>
+<br><strong>Example response</strong><pre><code>{
+  percentage: 'value'
+  time_spent: 'value'
+  state: 'value'
+  completed_at: 'value'
+  data: 'value'
+  temporary: 'value'
+  activity_uid: 'value'
+  anonymous: 'value'
+}</code></pre>
+<h2>Me <code>/me/</code>
+</h2>
+<p>
+Request information about the current authenticated user based on
++access_token+.
+</p>
+<h2>Ping <code>/ping/</code>
+</h2>
+<p>Alive check.
+</p>
+    </div>
+  </div>
+
+  <div class="large-4 columns">
+    <div id="sidebar">
+
+      <ul class="side-nav">
+        <li><strong>Compass API</strong></li>
+
+        
+
+        
+
+        
+          <li class="divider">
+
+          <li><a href="https://github.com/empirical-org/Compass-API/blob/master/lib/quill/api.yml">
+            <span class="octicon octicon-octoface"></span>
+            Edit on github
+          </a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

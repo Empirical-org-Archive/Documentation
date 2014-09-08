@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>A Brand New nanoc Site - </title>
+  <link rel="stylesheet" href="../../../stylesheet.css">
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.7.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="top-nav">
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="../../../">Compass Documentation</a>
+      <div class="right nav-links">
+        <a href="../../../">Documentation</a>
+        <a href="../../../api-reference">API Reference</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="breadcrumbs">
+      
+        <li><a href="../../../">Docs</a></li>
+      
+        <li><a href="../..">Empirical-Core</a></li>
+      
+        <li><a href="../../../Empirical-Core-QA-Testing">Empirical-Core-QA-Testing</a></li>
+      
+        <li class="current"><a href="">Integration-Testing.md</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 columns">
+    <div id="main">
+      <h1>Guide - QA Testing Empirical Core</h1>
+
+<h3>Creating Accounts</h3>
+
+<ol>
+<li>Create New Teacher Account </li>
+<li>Create New Student Account (from sign up). </li>
+<li>Connect Student account to teacher account via class-code. </li>
+<li>Create New Student Account (from teacher interface). </li>
+</ol>
+
+<h3>Assign Lessons</h3>
+
+<ol>
+<li>Teacher assigns new lessons to student. </li>
+<li>Student confirms that lesson is received. </li>
+<li>Teacher edits the details of the lesson. </li>
+<li>Student confirms that the details have been edited. </li>
+</ol>
+
+<h3>Old Teacher Account</h3>
+
+<ol>
+<li>Use a pre-created teacher account (Teacher account username: qa<em>test, password: qa</em>test). </li>
+<li>Teacher assigns a lesson to a student. Student completes lesson (see complete lessons, below). </li>
+<li>Student re-attempts an old lessons, with a score that pre-dates the unit test. </li>
+</ol>
+
+<h4>Complete Lessons</h4>
+
+<ol>
+<li>Student completes an "Unassigned" sentence writing activity. System has access to a series of pre-created activities that have one word answers. On this test, run "Correct" answers. </li>
+<li>Student should receive a green score. Confirm that the cache breaks, and new score assigned. Confirm that the lesson moves from assigned lessons to completed lessons. </li>
+<li>Confirm on the teacher side that the scorebook updates with a green score. </li>
+<li>Student re-tries a lesson, this time getting each answer wrong, and receives a "0". Confirm that the score goes from green to red. </li>
+<li>Confirm on the teacher side the score goes from green to red. </li>
+</ol>
+
+    </div>
+  </div>
+
+  <div class="large-4 columns">
+    <div id="sidebar">
+
+      <ul class="side-nav">
+        <li><strong>Empirical-Core-QA-Testing</strong></li>
+
+        
+          <li class="divider">
+
+          
+            <li><a href="./">
+              <span class="octicon octicon-file-text"></span>
+              Integration-Testing.md
+            </a></li>
+          
+        
+
+        
+
+        
+          <li class="divider">
+
+          <li><a href="https://www.github.com/empirical-org/Documentation/blob/master/Empirical-Core/Empirical-Core-QA-Testing/Integration-Testing.md">
+            <span class="octicon octicon-octoface"></span>
+            Edit on github
+          </a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

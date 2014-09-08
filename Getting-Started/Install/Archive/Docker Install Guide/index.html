@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>A Brand New nanoc Site - </title>
+  <link rel="stylesheet" href="../../../../stylesheet.css">
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.7.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="top-nav">
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="../../../../">Compass Documentation</a>
+      <div class="right nav-links">
+        <a href="../../../../">Documentation</a>
+        <a href="../../../../api-reference">API Reference</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="breadcrumbs">
+      
+        <li><a href="../../../../">Docs</a></li>
+      
+        <li><a href="../../..">Getting-Started</a></li>
+      
+        <li><a href="../../../../Install">Install</a></li>
+      
+        <li><a href="../../../../Archive">Archive</a></li>
+      
+        <li class="current"><a href="">Docker Install Guide.md</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 columns">
+    <div id="main">
+      <h1>Development Environment using Docker</h1>
+
+<p><strong>High Level Overview:</strong> Docker is a linux container that contains our entire development environment. </p>
+
+<h2>Prerequisites</h2>
+
+<ul>
+<li>
+<p>Install Vagrant</p>
+
+<p>https://docs.vagrantup.com/v2/installation/</p>
+</li>
+<li>
+<p>Install VirtualBox </p>
+
+<p>https://www.virtualbox.org/wiki/Downloads</p>
+</li>
+<li>
+<p>Install Fig</p>
+
+<p>http://orchardup.github.io/fig/install.html</p>
+</li>
+</ul>
+
+<h2>Notes on Linux Distributions</h2>
+
+<p>If you are using a distribution of linux it is not necessary to use docker-osx. All of the commands should work exactly the same if you just skip over the docker-osx lines.</p>
+
+<h2>Download Empircal Core</h2>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">git clone https://github.com/empirical-org/Compass-Core-Module-Environment.git
+<span class="nb">cd </span>Compass-Module-Environment
+git submodule init <span class="o">&amp;&amp;</span> git submodule update <span class="o">&amp;&amp;</span> <span class="nb">cd </span>Compass <span class="o">&amp;&amp;</span> git submodule init <span class="o">&amp;&amp;</span> git submodule update <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ../Compass-API <span class="o">&amp;&amp;</span> git submodule init <span class="o">&amp;&amp;</span> git submodule update <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ..
+docker-osx shell <span class="c"># wait for VM to boot</span>
+</code></pre></div>
+<p>Build the development environment images. You will only have to do this once. The next time you start the environment, you can omit this command unless a new gem has been added to the project as a dependency.</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">fig build
+</code></pre></div>
+<p>Start the two database containers.</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">fig up -d compassdb quilldb
+</code></pre></div>
+<p>Run the database migrations.</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">fig run compass rake db:create db:migrate db:seed
+fig run quill rake db:create db:migrate db:seed
+</code></pre></div>
+<p>Start the rest of the application containers.</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">fig up
+</code></pre></div>
+<p>Open <code>http://localdocker:3000/</code> in your web browser.</p>
+
+<h2>Finished! Next steps</h2>
+
+<p>Read the <a href="../../../Contributing.md">Contributing Guide</a> for guidelines on how to contribute your changes.</p>
+
+    </div>
+  </div>
+
+  <div class="large-4 columns">
+    <div id="sidebar">
+
+      <ul class="side-nav">
+        <li><strong>Archive</strong></li>
+
+        
+          <li class="divider">
+
+          
+            <li><a href="./">
+              <span class="octicon octicon-file-text"></span>
+              Docker Install Guide.md
+            </a></li>
+          
+            <li><a href="../Install%20Troubleshooting%20Issues/">
+              <span class="octicon octicon-file-text"></span>
+              Install Troubleshooting Issues.md
+            </a></li>
+          
+            <li><a href="../Install%20with%20Amazon%20Machine%20Image/">
+              <span class="octicon octicon-file-text"></span>
+              Install with Amazon Machine Image.md
+            </a></li>
+          
+            <li><a href="../Manual%20Installation/">
+              <span class="octicon octicon-file-text"></span>
+              Manual Installation.md
+            </a></li>
+          
+        
+
+        
+
+        
+          <li class="divider">
+
+          <li><a href="https://www.github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Archive/Docker%20Install%20Guide.md">
+            <span class="octicon octicon-octoface"></span>
+            Edit on github
+          </a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

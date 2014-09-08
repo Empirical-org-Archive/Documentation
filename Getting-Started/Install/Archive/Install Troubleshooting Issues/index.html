@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>A Brand New nanoc Site - </title>
+  <link rel="stylesheet" href="../../../../stylesheet.css">
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.7.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="top-nav">
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="../../../../">Compass Documentation</a>
+      <div class="right nav-links">
+        <a href="../../../../">Documentation</a>
+        <a href="../../../../api-reference">API Reference</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="breadcrumbs">
+      
+        <li><a href="../../../../">Docs</a></li>
+      
+        <li><a href="../../..">Getting-Started</a></li>
+      
+        <li><a href="../../../../Install">Install</a></li>
+      
+        <li><a href="../../../../Archive">Archive</a></li>
+      
+        <li class="current"><a href="">Install Troubleshooting Issues.md</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 columns">
+    <div id="main">
+      <h1>Install Issues</h1>
+
+<h5>-1 Insufficent Root Permissions</h5>
+
+<p>db:migrate requires root privileges. and my rot environment is completely different. no gems, no rake, no bundle.</p>
+
+<h5>-2 Postgres Database</h5>
+
+<p>ok, so "postgresql-contrib" is a necessary package to get postgresql's extensions?</p>
+
+<h5>-3 Owner Issue</h5>
+
+<p>git submodule init &amp;&amp; git submodule update</p>
+
+<h5>-4 Issue with HStore</h5>
+
+<blockquote>
+<p>ActiveRecord::StatementInvalid: </p>
+
+<p>PG::InsufficientPrivilege: ERROR: permission denied to create extension "hstore"</p>
+
+<p>HINT: Must be superuser to create this extension.</p>
+
+<p>: CREATE EXTENSION IF NOT EXISTS hstore</p>
+</blockquote>
+
+<h5>-5 error when migrating</h5>
+
+<blockquote>
+<p>the scheme postgres does not accept registry part: super:4Rh0izHYfmfWx9cV@:   </p>
+
+<p>terminal output:rake aborted! StandardError: An error has occurred, this and all later migrations canceled:</p>
+
+<p>the scheme postgres does not accept registry part: super:4Rh0izHYfmfWx9cV@: (or bad hostname?)/Users/jasonlo/Documents/DBC/side<em>projects/Compass/db/migrate/20140522033151</em>add<em>queue</em>classic.rb:5:in `up'
+Tasks: TOP =&gt; db:migrate
+(See full trace by running task with --trace)</p>
+</blockquote>
+
+<p>database.yml: 
+development:
+host: localhost
+adapter: postgresql
+encoding: unicode
+database: Compass-dev
+pool: 5</p>
+
+<blockquote>
+<p>This apparently was caused because postgres superuser in database.yml was needed.</p>
+</blockquote>
+
+<h5>-6 User from "error when migrating" issue then got:</h5>
+
+<blockquote>
+<p>pg_dump: [archiver (db)] connection to database "quill" failed: FATAL: password authentication failed for user "shubham"</p>
+</blockquote>
+
+<h5>-7 When user from "error when migrating" finally got the app running, it still didn't work that well because</h5>
+
+<blockquote>
+<p>db:seed fails with oMethodError: undefined methodcost' for BCrypt::Engine:Class`</p>
+</blockquote>
+
+<h5>-8 User reported: "Some points of installation."</h5>
+
+<ul>
+<li>using postgres as superuser is necessary for hstore to run</li>
+<li>Had to modify pg_hba.conf to use "trust" in place of md5</li>
+<li>Had to run db:migrate as a postgres (super) user with sudo su - postgres</li>
+<li>Had to export two environment variables with bash.</li>
+</ul>
+
+<h5>-9 Error when seeding:</h5>
+
+<blockquote>
+<p>NameError: uninitialized constant Chapter</p>
+</blockquote>
+
+<p>from line 38 in the seeds.rb</p>
+
+<h5>-10 With all dependencies installed; when running ./launch.sh, on OSX 10.8.5 with a couple other ports running for a couple of django projects. User got this error:</h5>
+
+<blockquote>
+<p>connect: multipart: use parser (multiparty, busboy, formidable) directly
+connect: limit: Restrict request size at location of read</p>
+</blockquote>
+
+<p>In the terminal user was getting</p>
+
+<blockquote>
+<p>wantsAsync [ id: 'wantsAsync' ] [ id: 'wantsAsync' ]
+Listening on port undefined</p>
+</blockquote>
+
+<p>he was able to get it running on http://localhost:3000/?playerID=f91161b2a6</p>
+
+<blockquote>
+<p>with PORT=3000 ./launch.sh 
+however, still got the connect: multipart: use parser (multiparty, busboy, formidable) directly
+connect: limit: Restrict request size at location of read error</p>
+</blockquote>
+
+<h5>-11 When using rake db:seed, users are reporting</h5>
+
+<blockquote>
+<p>NoMethodError: undefined method 'code' for nil:NilClass</p>
+</blockquote>
+
+    </div>
+  </div>
+
+  <div class="large-4 columns">
+    <div id="sidebar">
+
+      <ul class="side-nav">
+        <li><strong>Archive</strong></li>
+
+        
+          <li class="divider">
+
+          
+            <li><a href="../Docker%20Install%20Guide/">
+              <span class="octicon octicon-file-text"></span>
+              Docker Install Guide.md
+            </a></li>
+          
+            <li><a href="./">
+              <span class="octicon octicon-file-text"></span>
+              Install Troubleshooting Issues.md
+            </a></li>
+          
+            <li><a href="../Install%20with%20Amazon%20Machine%20Image/">
+              <span class="octicon octicon-file-text"></span>
+              Install with Amazon Machine Image.md
+            </a></li>
+          
+            <li><a href="../Manual%20Installation/">
+              <span class="octicon octicon-file-text"></span>
+              Manual Installation.md
+            </a></li>
+          
+        
+
+        
+
+        
+          <li class="divider">
+
+          <li><a href="https://www.github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Archive/Install%20Troubleshooting%20Issues.md">
+            <span class="octicon octicon-octoface"></span>
+            Edit on github
+          </a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

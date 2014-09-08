@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>A Brand New nanoc Site - </title>
+  <link rel="stylesheet" href="../../../../stylesheet.css">
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.7.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="top-nav">
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="../../../../">Compass Documentation</a>
+      <div class="right nav-links">
+        <a href="../../../../">Documentation</a>
+        <a href="../../../../api-reference">API Reference</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="breadcrumbs">
+      
+        <li><a href="../../../../">Docs</a></li>
+      
+        <li><a href="../../..">Getting-Started</a></li>
+      
+        <li><a href="../../../../Install">Install</a></li>
+      
+        <li><a href="../../../../Archive">Archive</a></li>
+      
+        <li class="current"><a href="">Manual Installation.md</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 columns">
+    <div id="main">
+      <h1>Manual Install</h1>
+
+<p><em>These instructions may be out of date. If you run into issues, use the Docker install.</em></p>
+
+<p><strong>If you are having any trouble installing, please post your questions to the <a href="http://www.empirical.org/cofactor/teams/compass">"Questions" mailing list in Cofactor.</a></strong></p>
+
+<p><em>Note:</em> Unless stated otherwise, all commands assume that your current working directory is the Quill application root.</p>
+
+<ol>
+<li>
+<p><strong>Setup ruby 2.1.1. You can use RVM or rbenv to achieve this, rbenv is recommended (https://github.com/sstephenson/rbenv). Here are the steps for installing os OS X:</strong></p>
+
+<p>Install homebrew (if you haven't already): http://brew.sh/</p>
+
+<p>Install rbenv:</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">brew update
+brew install rbenv ruby-build
+</code></pre></div>
+<p>Install ruby:</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">rbenv install 2.1.1
+</code></pre></div>
+<p>Set it to your default ruby:</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">rbenv <span class="nb">local </span>2.1.1
+</code></pre></div>
+<p><em>Note</em>: you may need to run <code>brew upgrade ruby-build</code> if 2.1.1 is
+unavailable</p>
+</li>
+<li>
+<p><strong>Install dependencies.</strong></p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">bundle install
+</code></pre></div>
+<p><em>Note</em>: This may require you to install missing system packages using your
+system package handler (<code>brew</code>, <code>apt</code>, <code>yum</code>, etc.).</p>
+
+<p>Ensure that Postgres is installed. On Macs:</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">brew install postgres
+initdb /usr/local/var/postgres
+postgres -D /usr/local/var/postgres <span class="p">&amp;</span> <span class="c">#start the server</span>
+createuser -s -r postgres
+psql postgres <span class="c"># if this works, you win</span>
+</code></pre></div>
+<p>Update submodules</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">git submodule init
+git submodule update
+</code></pre></div>
+</li>
+<li>
+<p><strong>Set up your database configuration by creating and editing the file
+<code>config/database.yml</code> with appropriate connection information. Example
+information is provided below.</strong></p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">development:
+    host: localhost
+    adapter: postgresql
+    encoding: unicode
+    database: &lt;database_name&gt;
+    pool: 5
+    username: my_name
+    password: my_pass
+</code></pre></div>
+</li>
+<li>
+<p><strong>Build the database structure.</strong></p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">sudo service postgres start   <span class="c"># may change depending on your OS</span>
+
+rake db:create
+rake db:structure:load
+</code></pre></div>
+</li>
+<li>
+<p><strong>Seed data into the database.</strong></p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">rake db:seed
+</code></pre></div>
+<p>If you are granted access to a Heroku environment, you can also capture a
+database directly from that. Instructions below are for example only.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">heroku pg:capture --app &lt;app&gt;
+curl -o ~/latest.dump $(heroku pgbackups:url --app &lt;app&gt;)
+pg_restore --verbose --clean --no-acl --no-owner -h localhost -U &lt;your_db_user&gt; -d &lt;database_name&gt; ~/latest.dump
+</code></pre></div>
+<p><em>Note</em>: <code>&lt;app&gt;</code> is the name of the Quill deployment on Heroku you want to
+retrieve data from.</p>
+</li>
+<li>
+<p><strong>Ensure the following parameters are in your environment:</strong></p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">JRUBY_OPTS=--1.9
+APP_SECRET=your-secret-key
+HOMEPAGE_CHAPTER_ID=1
+</code></pre></div>
+<p>Setting these up varies on your platform. You can <code>export</code> them in your bash config (not recommended) or use a config  file provided by either RVM (.ruby-env) or rbenv (.rbenv-vars). Please refer to their respective documentations if you need more information.</p>
+</li>
+<li>
+<p><strong>Start the app, make sure it works.</strong></p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">rails server
+curl localhost:3000
+</code></pre></div>
+</li>
+</ol>
+
+<h2>Benchmarking</h2>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">user = User.first
+user.refresh_token!
+token = user.token
+
+$ ab -H "Authorization: Basic `echo TOKEN_GOES_HERE: | base64`==" -n 5 -c 1 http://www.quill.org/profile
+</code></pre></div>
+    </div>
+  </div>
+
+  <div class="large-4 columns">
+    <div id="sidebar">
+
+      <ul class="side-nav">
+        <li><strong>Archive</strong></li>
+
+        
+          <li class="divider">
+
+          
+            <li><a href="../Docker%20Install%20Guide/">
+              <span class="octicon octicon-file-text"></span>
+              Docker Install Guide.md
+            </a></li>
+          
+            <li><a href="../Install%20Troubleshooting%20Issues/">
+              <span class="octicon octicon-file-text"></span>
+              Install Troubleshooting Issues.md
+            </a></li>
+          
+            <li><a href="../Install%20with%20Amazon%20Machine%20Image/">
+              <span class="octicon octicon-file-text"></span>
+              Install with Amazon Machine Image.md
+            </a></li>
+          
+            <li><a href="../Manual%20Installation/">
+              <span class="octicon octicon-file-text"></span>
+              Manual Installation.md
+            </a></li>
+          
+        
+
+        
+
+        
+          <li class="divider">
+
+          <li><a href="https://www.github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Archive/Manual%20Installation.md">
+            <span class="octicon octicon-octoface"></span>
+            Edit on github
+          </a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

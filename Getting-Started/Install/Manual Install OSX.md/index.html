@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>A Brand New nanoc Site - </title>
+  <link rel="stylesheet" href="../../../stylesheet.css">
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.7.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="top-nav">
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="../../../">Compass Documentation</a>
+      <div class="right nav-links">
+        <a href="../../../">Documentation</a>
+        <a href="../../../api-reference">API Reference</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="breadcrumbs">
+      
+        <li><a href="../../../">Docs</a></li>
+      
+        <li><a href="../..">Getting-Started</a></li>
+      
+        <li><a href="../../../Install">Install</a></li>
+      
+        <li class="current"><a href="">Manual Install OSX.md</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 columns">
+    <div id="main">
+      <h1>Empirical Easy Install</h1>
+
+<p><em>Here is a branch of Empirical Core that makes installation and setup easy.</em></p>
+
+<p>If you want a simple guide to install Empirical Core, then you've come to the right place! Here's the step-by-step process to get Empirical Core running on your system:</p>
+
+<ol>
+<li>
+<p>Download and install <a href="https://github.com/sstephenson/rbenv">rbenv</a> (or a Ruby version manager of your choice). You need to install Ruby version 2.1.2 to properly use Empirical Core. The best way to do this is follow the README and wiki of whatever Ruby version manager you download, but if you decide to use rbenv, then <a href="http://brew.sh/">homebrew</a> has a really great and easy-to-use setup and install process:</p>
+
+<ol>
+<li><code>brew update</code></li>
+<li><code>brew install rbenv ruby-build</code></li>
+<li><code>echo 'eval "$(rbenv init -)"' &gt;&gt; ~/.bash_profile</code></li>
+<li>Close and reopen your terminal.</li>
+</ol>
+</li>
+<li>
+<p>Download and install <a href="http://www.postgresql.org/">postgres</a>, the database engine Empirical Core uses. The easiest way to get started with this is to download <a href="http://postgresapp.com/">postgres.app</a>. If you're more comfortable with installing custom software, you can use <a href="http://brew.sh/">homebrew</a> to download and install postgres instead:</p>
+
+<ol>
+<li><code>brew update</code></li>
+<li><code>brew install postgres</code></li>
+<li>Follow the instructions on the resulting info screen.</li>
+</ol>
+</li>
+<li><p>Clone the Empirical Core project. Navigate to whatever directory you'd like Empirical Core to live in, and then use <code>git clone https://github.com/empirical-org/Empirical-Core.git</code>. From here on in, all the commands you have to type should be in the new Empirical Core directory you just downloaded, so you should probably <code>cd Empirical-Core</code>.</p></li>
+<li><p>Switch to the <code>easy_install</code> branch with <code>git checkout easy_install</code>.</p></li>
+<li><p>Install bundler with <code>gem install bundler</code></p></li>
+<li><p>Install the bundle with <code>bundle install</code>.</p></li>
+<li><p>Set up your database with <code>bundle exec rake db:setup</code>.</p></li>
+<li><p>Run the server with <code>bundle exec rails s</code>.</p></li>
+</ol>
+
+<p>Now open your browser and navigate to localhost:3000 and you should see Empirical-Core pull up properly! When you're done with the server, use Ctrl-C to break it and return to your commandline.</p>
+
+<p>The installation comes with three users, though you can create as many more as you like:</p>
+
+<ol>
+<li>A teacher, username <code>teacher</code> and password <code>teacher</code>.</li>
+<li>A student, username <code>student</code> and password <code>student</code>.</li>
+<li>An admin, username <code>admin</code> and password <code>admin</code>.</li>
+</ol>
+
+    </div>
+  </div>
+
+  <div class="large-4 columns">
+    <div id="sidebar">
+
+      <ul class="side-nav">
+        <li><strong>Install</strong></li>
+
+        
+          <li class="divider">
+
+          
+            <li><a href="../Instant%20Hacking%20-%20No%20Install%20WebIDE/">
+              <span class="octicon octicon-file-text"></span>
+              Instant Hacking - No Install WebIDE.md
+            </a></li>
+          
+            <li><a href="../Manual%20Install%20Linux/">
+              <span class="octicon octicon-file-text"></span>
+              Manual Install Linux.md
+            </a></li>
+          
+            <li><a href="../Manual%20Install%20OSX/">
+              <span class="octicon octicon-file-text"></span>
+              Manual Install OSX.md
+            </a></li>
+          
+            <li><a href="../Readme/">
+              <span class="octicon octicon-file-text"></span>
+              Readme.md
+            </a></li>
+          
+        
+
+        
+          <li class="divider">
+
+          
+            <li><a href="../../../Archive/">
+              <span class="octicon octicon-file-directory"></span>
+              Archive
+            </a></li>
+          
+        
+
+        
+          <li class="divider">
+
+          <li><a href="https://www.github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Manual%20Install%20OSX.md">
+            <span class="octicon octicon-octoface"></span>
+            Edit on github
+          </a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

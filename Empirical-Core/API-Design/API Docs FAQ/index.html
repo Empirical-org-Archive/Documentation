@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>A Brand New nanoc Site - </title>
+  <link rel="stylesheet" href="../../../stylesheet.css">
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.7.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="top-nav">
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="../../../">Compass Documentation</a>
+      <div class="right nav-links">
+        <a href="../../../">Documentation</a>
+        <a href="../../../api-reference">API Reference</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="breadcrumbs">
+      
+        <li><a href="../../../">Docs</a></li>
+      
+        <li><a href="../..">Empirical-Core</a></li>
+      
+        <li><a href="../../../API-Design">API-Design</a></li>
+      
+        <li class="current"><a href="">API Docs FAQ.md</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 columns">
+    <div id="main">
+      <h1>API Docs Questions</h1>
+
+<h3>Are there ids as well in the /activities JSON responses?</h3>
+
+<p>Yes, there is the ID in the JSON. The UID is the activity ID. </p>
+
+<h3>Will Stories With Friends be handed an activity id via iFrame?</h3>
+
+<p>Yes, via the UID. </p>
+
+<h3>For PUT calls, can it be one or more keys, or must it be the entire JSON object.</h3>
+
+<p>No, you can choose to only include the properties you want to update.</p>
+
+<h3>In an Activity_Session, what is the “data” field?</h3>
+
+<p>Data is a json object.</p>
+
+<h3>For the access token mentioned throughout the docs. Does each student get a different access token?</h3>
+
+<p>The access token is through the OAuth, and that is unique to each user. These OAuth tokens expire. </p>
+
+<h3>Related, where do the uid and sid query string parameters play in?</h3>
+
+<p>UID is activity id. When a user enters an application, an activity session has already been created. An activity session is created when the activity is assigned to the student. </p>
+
+<p>?anonymous=true means that a user can go through without an activity session. If your application requires a session to run properly, you can create a temporary session using the API.</p>
+
+<p>Data from the activity that is going to be saved (e.g. a story the students produce) will be saved back to the activity session. </p>
+
+<h3>In Stories with Friends, how do you identify a user?</h3>
+
+<p>SID is shared, and the UID is the identification number. </p>
+
+<p>Two students will have their own activity session (UID). </p>
+
+<h3>How to get the words list for the Activity?</h3>
+
+<p>The activity_session does not contain any data about the activity. Instead it produces the results. </p>
+
+<h3>What is an Activity?</h3>
+
+<p>If there were five sets of words, each set of words would have its own activity. </p>
+
+<p>Applications provide a form url to create activities for that particular application. </p>
+
+<p>An application creator could set it up to accept any form of data. </p>
+
+<h3>How do you integrate an app?</h3>
+
+<p>You need to create a javascript event when an event is created, and an activity when the form is filled. </p>
+
+<h3>Resizing the window?</h3>
+
+<p>It should do so automatically. </p>
+
+<h3>How does the application send data back to Empirical Core for creating an Activity?</h3>
+
+<p>Take data and move into the json object, and then post data using API.</p>
+
+    </div>
+  </div>
+
+  <div class="large-4 columns">
+    <div id="sidebar">
+
+      <ul class="side-nav">
+        <li><strong>API-Design</strong></li>
+
+        
+          <li class="divider">
+
+          
+            <li><a href="../API%20Design%20Roadmap/">
+              <span class="octicon octicon-file-text"></span>
+              API Design Roadmap.md
+            </a></li>
+          
+            <li><a href="./">
+              <span class="octicon octicon-file-text"></span>
+              API Docs FAQ.md
+            </a></li>
+          
+            <li><a href="../API%20Docs/">
+              <span class="octicon octicon-file-text"></span>
+              API Docs.md
+            </a></li>
+          
+        
+
+        
+
+        
+          <li class="divider">
+
+          <li><a href="https://www.github.com/empirical-org/Documentation/blob/master/Empirical-Core/API-Design/API%20Docs%20FAQ.md">
+            <span class="octicon octicon-octoface"></span>
+            Edit on github
+          </a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

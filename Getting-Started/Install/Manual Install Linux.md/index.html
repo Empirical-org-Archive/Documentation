@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>A Brand New nanoc Site - </title>
+  <link rel="stylesheet" href="../../../stylesheet.css">
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.7.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="top-nav">
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="../../../">Compass Documentation</a>
+      <div class="right nav-links">
+        <a href="../../../">Documentation</a>
+        <a href="../../../api-reference">API Reference</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="breadcrumbs">
+      
+        <li><a href="../../../">Docs</a></li>
+      
+        <li><a href="../..">Getting-Started</a></li>
+      
+        <li><a href="../../../Install">Install</a></li>
+      
+        <li class="current"><a href="">Manual Install Linux.md</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 columns">
+    <div id="main">
+      <ol>
+<li><p>Install Ubuntu 14.04 LTS</p></li>
+<li><p>Upgrade the system.</p></li>
+<li>
+<p>Clone the Empricial-Core git repository.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git clone http://github.com/empirical-org/Empirical-Core.git ./empirical-core
+</code></pre></div>
+</li>
+<li>
+<p>Install rbenv</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">sudo apt-get install rbenv
+</code></pre></div>
+</li>
+<li>
+<p>Install the ruby-build plugin for rbenv.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">mkdir -p ~/.rbenv/plugins
+git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+</code></pre></div>
+</li>
+<li>
+<p>Checkout the most recent tag of the ruby-build plugin.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">cd ~/.rbenv/plugins/ruby-build
+git checkout v20140702
+</code></pre></div>
+</li>
+<li>
+<p>Build dependencies needed to build Ruby 2.1.2.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6 libreadline6-dev zlib1g zlib1g-dev
+</code></pre></div>
+</li>
+<li>
+<p>Install Ruby 2.1.2 using rbenv.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">sudo rbenv install 2.1.2
+</code></pre></div>
+</li>
+<li>
+<p>Change directories to the empirical-core checkout. Verify the local version
+of Ruby has changed to 2.1.2. Set the shell version to 2.1.2 as well.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">cd ./empirical-core
+rbenv local
+
+&gt; 2.1.2
+
+rbenv shell 2.1.2
+rbenv shell
+
+&gt; 2.1.2
+</code></pre></div>
+</li>
+<li>
+<p>Initialize rbenv and verify that you are now using Ruby 2.1.2.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">eval "$(rbenv init -)"
+ruby --version
+
+&gt; ruby 2.1.2p95 (2014-05-08 revision 45877) [x86_64-linux]
+</code></pre></div>
+</li>
+<li>
+<p>Install Bundler and verify you are using the rbenv version.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">sudo gem install bundler
+which bundle
+
+&gt; /home/matthew/.rbenv/shims/bundle
+</code></pre></div>
+</li>
+<li>
+<p>Install empirical-core gem dependencies and rehash rbenv.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">sudo apt-get install libusb-1.0.0 postgresql postgresql-contrib-9.3 postgresql-server-dev-9.3
+bundle install
+rbenv rehash
+</code></pre></div>
+</li>
+<li>
+<p>Create the database configuration file from the given example. Create
+a user/password entry in the file (you will add this user/password pair
+into PostgreSQL in the next step).</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">cp config/database.yml.example config/database.yml
+</code></pre></div>
+<p>The file should look something like this when you're done with it.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">development:
+    host: localhost
+    adapter: postgresql
+    encoding: unicode
+    database: emp_gr_development
+    username: my_name
+    password: my_pass
+</code></pre></div>
+</li>
+<li>
+<p>Start PostgreSQL and create your postgresql user. Test your login. Note
+that $USER and the password you enter should match what you put in the
+database.yml file above.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">sudo service start postgresql
+sudo -u postgres createuser --superuser $USER
+sudo -u postgres psql
+
+postgres=#&gt; \password $USER
+postgres=#&gt; Enter password: **********
+postgres=#&gt; Enter it again: **********
+postgres=#&gt; \q
+
+sudo -u postgres createdb $USER
+psql
+matthew=#&gt; \q
+</code></pre></div>
+</li>
+<li>
+<p>Build the database.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">rake db:create
+rake db:migrate
+</code></pre></div>
+</li>
+<li>
+<p>Run the server and make sure it works.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">rails server
+curl localhost:3000
+</code></pre></div>
+</li>
+</ol>
+
+    </div>
+  </div>
+
+  <div class="large-4 columns">
+    <div id="sidebar">
+
+      <ul class="side-nav">
+        <li><strong>Install</strong></li>
+
+        
+          <li class="divider">
+
+          
+            <li><a href="../Instant%20Hacking%20-%20No%20Install%20WebIDE/">
+              <span class="octicon octicon-file-text"></span>
+              Instant Hacking - No Install WebIDE.md
+            </a></li>
+          
+            <li><a href="../Manual%20Install%20Linux/">
+              <span class="octicon octicon-file-text"></span>
+              Manual Install Linux.md
+            </a></li>
+          
+            <li><a href="../Manual%20Install%20OSX/">
+              <span class="octicon octicon-file-text"></span>
+              Manual Install OSX.md
+            </a></li>
+          
+            <li><a href="../Readme/">
+              <span class="octicon octicon-file-text"></span>
+              Readme.md
+            </a></li>
+          
+        
+
+        
+          <li class="divider">
+
+          
+            <li><a href="../../../Archive/">
+              <span class="octicon octicon-file-directory"></span>
+              Archive
+            </a></li>
+          
+        
+
+        
+          <li class="divider">
+
+          <li><a href="https://www.github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Manual%20Install%20Linux.md">
+            <span class="octicon octicon-octoface"></span>
+            Edit on github
+          </a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

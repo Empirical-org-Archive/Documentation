@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>A Brand New nanoc Site - </title>
+  <link rel="stylesheet" href="../../../stylesheet.css">
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.7.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="top-nav">
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="../../../">Compass Documentation</a>
+      <div class="right nav-links">
+        <a href="../../../">Documentation</a>
+        <a href="../../../api-reference">API Reference</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="breadcrumbs">
+      
+        <li><a href="../../../">Docs</a></li>
+      
+        <li><a href="../..">Empirical-Core</a></li>
+      
+        <li><a href="../../../API-Design">API-Design</a></li>
+      
+        <li class="current"><a href="">API Docs.md</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 columns">
+    <div id="main">
+      <h1>API Docs</h1>
+
+<h2>High level overview</h2>
+
+<p>Empirical Core is our LMS for assigning activities and viewing results. The Empirical Core database contains a link to every single activity. For example, we currently feature 150 activities, and Empirical Core stores the name of each activity, a description of the activity, and a link to that activity. The application, Quill Grammar, contains all of the data about the lesson (the prompts, the practice questions, etc.)</p>
+
+<ul>
+<li>Lesson data is stored in Empirical Core and is parsed by Quill. </li>
+<li>quill queries api through that data</li>
+<li>lesson passes id used to look up that information</li>
+</ul>
+
+<h2>Setup Oauth</h2>
+
+<p>Currently, you must work with a Quill admin to create your oauth account. Send
+your application info to hello@quill.org and you will receive a consumer token
+and secret. You can also use the
+<a href="http://github.com/empirical-org/Empirical-Core-Module-Environment">Empirical Core-Module-Environment</a>
+to setup your own Empirical Core and develop your application against that. This
+guide will assume that you are using this approach.</p>
+
+<h2>Setup Empirical Core</h2>
+
+<p>(use docker)</p>
+
+<h2>Configure your application</h2>
+
+<p><strong>Sign in as an admin:</strong></p>
+
+<ul>
+<li>Browse to http://localdocker:3000/session/new</li>
+<li>email: admin@quill.org, password: admin</li>
+</ul>
+
+<p><strong>Setup Oauth app:</strong></p>
+
+<p>This creates your application as an Empirical Core oauth consumer. You will need to implement an oauth client within your application. </p>
+
+<ul>
+<li>Browse to http://localdocker:3000/oauth/applications/new</li>
+<li>Enter a name for your app. Can be anything. </li>
+<li>Enter a redirect url. Most likely will be on localhost or localdocker,
+depending on your setup.</li>
+</ul>
+
+<p><strong>Setup Empirical Core app:</strong></p>
+
+<p>This sets up your apps' parameters in Empirical Core. You will need a <code>module_url</code> and a <code>form_url</code> (documented below):</p>
+
+<ul>
+<li>Browse to http://localdocker:3000/cms/activity_classifications/new</li>
+<li>Enter a name for your app. This is for convenience only, can be anything.</li>
+<li>Enter a key. Must be unique. We're going to use "example" for this tutorial.</li>
+<li>
+<p>Enter your app's <code>form_url</code> and <code>module_url</code>. For Example, you could enter:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">form_url:   http://localhost:3000/form
+module_url: http://localhost:3000/module
+</code></pre></div>
+<p>The guide will assume that you used these settings.</p>
+</li>
+</ul>
+
+<h2>Creating an activity</h2>
+
+<ul>
+<li>Browse to http://localdocker:3000/cms/activity_classifications/</li>
+<li>Click on the "Activities" link next to your app name.</li>
+<li>Click on "Add a new activity"</li>
+<li>You should now be on a page with a url similar to 
+http://localdocker:3000/cms/activity_type/example/activities/new</li>
+<li>Fill in the Empirical Core properties and hit "next".</li>
+<li>From this page, you can begin to test your <code>form_url</code>.</li>
+</ul>
+
+<h2>Setting up <code>form_url</code>
+</h2>
+
+<hr>
+
+<p>The walkthrough ends here. The rest of this document is unorganized notes. </p>
+
+<hr>
+
+<p>Empirical Core relies on two pages within your app</p>
+
+<h2>API Endpoints</h2>
+
+<p>The API is organized into endpoints that follow a standard format. For example:</p>
+
+<p>Plural works like this:
+Sessions
+Activities</p>
+
+<p>POST /types
+Creates</p>
+
+<p>PUT /types/id
+Updates</p>
+
+<p>GET /types/id
+Gets single item</p>
+
+<p>Singular:
+Me
+Ping</p>
+
+<p>Works like:</p>
+
+<p>GET / POST / PUT /type</p>
+
+<p>Creates, updates, displays the resource.</p>
+
+<p>Authorization for a resource is based on the access token and the user it is
+associated with.</p>
+
+<h2>Activity specification</h2>
+
+<p>An activity requires to endpoints to function, <code>module_url</code> and <code>form_url</code>.
+These urls are loaded to display and update an activity.</p>
+
+<p>For example, if your <code>module_url</code> is <code>http://app.example.com/module</code> then
+Empirical Core would load a url similar to this:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">http://app.example.com/module?uid=asdf1234&amp;sid=5678aoeu
+</code></pre></div>
+<p>Requirements of an activity app:</p>
+
+<p>Has a URL for a form (To create and edit activities) and a URL to load an
+activity. Urls can be specified in config.</p>
+
+<p>App must auth using Empirical Core's oauth. </p>
+
+<p>When a student loads an activity, the apps module URL loaded with to params:</p>
+
+<p>Session id
+Activity id</p>
+
+<p>App will then use the access token to retrieve the two id's. The app can then
+store whatever state information it needs in the session, but it * must * keep
+the status set to an appropriate value. The session state data will allow the
+app to load a partially completed activity. The app must set the status to
+"finished", otherwise Empirical Core will always provide the same session id for a
+given activity and user to allow the user to complete the (presumably)
+unfinished activity.  Once the activity is finished and the score has been
+saved to Empirical Core, the app should use the Empirical Core library to signal the parent
+frame to redirect to the results page:</p>
+
+<p>(Js example goes here)</p>
+
+<p>Again, the app should set the session to "finished" before calling this JavaScript. </p>
+
+<p>Activity Management</p>
+
+<p>Empirical Core will load the form URL to allow editing of values specific to the
+activity. Empirical Core has standard values (name, description, status) that are
+edited on Empirical Core, and loads the apps form URL in an iframe to modify the
+activity's vendor-specific values. The app will receive a save signal from the
+parent frame which should cause the app to submit the values to the API using
+the provided activity id:</p>
+
+<p>(Example event receiver goes here)</p>
+
+<p>The app will then send a save success signal which will cause the parent frame
+to redirect.</p>
+
+    </div>
+  </div>
+
+  <div class="large-4 columns">
+    <div id="sidebar">
+
+      <ul class="side-nav">
+        <li><strong>API-Design</strong></li>
+
+        
+          <li class="divider">
+
+          
+            <li><a href="../API%20Design%20Roadmap/">
+              <span class="octicon octicon-file-text"></span>
+              API Design Roadmap.md
+            </a></li>
+          
+            <li><a href="../API%20Docs%20FAQ/">
+              <span class="octicon octicon-file-text"></span>
+              API Docs FAQ.md
+            </a></li>
+          
+            <li><a href="./">
+              <span class="octicon octicon-file-text"></span>
+              API Docs.md
+            </a></li>
+          
+        
+
+        
+
+        
+          <li class="divider">
+
+          <li><a href="https://www.github.com/empirical-org/Documentation/blob/master/Empirical-Core/API-Design/API%20Docs.md">
+            <span class="octicon octicon-octoface"></span>
+            Edit on github
+          </a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

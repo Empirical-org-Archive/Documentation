@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>A Brand New nanoc Site - </title>
+  <link rel="stylesheet" href="../../stylesheet.css">
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.7.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="top-nav">
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="../../">Compass Documentation</a>
+      <div class="right nav-links">
+        <a href="../../">Documentation</a>
+        <a href="../../api-reference">API Reference</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="breadcrumbs">
+      
+        <li><a href="../../">Docs</a></li>
+      
+        <li><a href="..">Stories-with-Friends</a></li>
+      
+        <li class="current"><a href="">Database Design.md</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 columns">
+    <div id="main">
+      <h1>Database Design</h1>
+
+<p><em>This document outlines how our database is constructed for Stories with Friends (SWF).</em></p>
+
+<h2>Ideas About Database</h2>
+
+<p>I would lean towards using Postgres because it is a solid database and there is use of it already in Quill, https://github.com/search?l=&amp;q=postgres+user%3Aempirical-org&amp;ref=advsearch&amp;type=Code .</p>
+
+<p>With Postgres 9.4, JSON support is better than ever. Complete with indexing and functions. http://www.postgresql.org/about/news/1522/ http://www.postgresql.org/docs/9.4/static/datatype-json.html</p>
+
+<p>I've recently gathered some thoughts about node and postgres here, http://www.wlaurance.com/2014/04/Using-PostgreSQL-and-Node/ caution examples are in coffee script ;) Here I talk about a migration tool, the actual node-pg library, and the module to generate sql from JavaScript.</p>
+
+<p>We could using an existing Postgres server and create a new database for stories-with-friends or run a separate server. If we want to utilize the new JSONB features, we will need a 9.4 server.</p>
+
+<p>Once we have a database, create a table with the either the JSON type or for now just use a text type and JSON.parse and JSON.stringify to deserialize/serialize.</p>
+
+<p>We can build model code with https://github.com/brianc/node-sql which will generate SQL statements.</p>
+
+<p>I would like to take the time to properly use a db-migration tool and establish a nice pattern for the model code so someone else can easily extend things.</p>
+
+<p>Since Postgres is already used in the Quill ecosystem, I see no reason to through another datastore in the mix. Postgres has one of the cleanest code bases around and is very solid.</p>
+
+    </div>
+  </div>
+
+  <div class="large-4 columns">
+    <div id="sidebar">
+
+      <ul class="side-nav">
+        <li><strong>Stories-with-Friends</strong></li>
+
+        
+          <li class="divider">
+
+          
+            <li><a href="../Database%20Design/">
+              <span class="octicon octicon-file-text"></span>
+              Database Design.md
+            </a></li>
+          
+            <li><a href="../README/">
+              <span class="octicon octicon-file-text"></span>
+              README.md
+            </a></li>
+          
+        
+
+        
+
+        
+          <li class="divider">
+
+          <li><a href="https://www.github.com/empirical-org/Documentation/blob/master/Stories-with-Friends/Database%20Design.md">
+            <span class="octicon octicon-octoface"></span>
+            Edit on github
+          </a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

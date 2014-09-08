@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>A Brand New nanoc Site - </title>
+  <link rel="stylesheet" href="../../../stylesheet.css">
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.7.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="top-nav">
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="../../../">Compass Documentation</a>
+      <div class="right nav-links">
+        <a href="../../../">Documentation</a>
+        <a href="../../../api-reference">API Reference</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="breadcrumbs">
+      
+        <li><a href="../../../">Docs</a></li>
+      
+        <li><a href="../..">Empirical-Core</a></li>
+      
+        <li><a href="../../../Code-Overview">Code-Overview</a></li>
+      
+        <li class="current"><a href="">Empirical Core Overview.md</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 columns">
+    <div id="main">
+      <h1>Empirical Core Code Overview</h1>
+
+<p>** <em>Here is a complete overview of Empirical Core through a question and answer format.</em> **</p>
+
+<h1>Introduction</h1>
+
+<h3>What is Empirical Core?</h3>
+
+<p>Empirical Core is a platform for educational games and activities. We integrate all of our activities into the Empirical Core Platform via the Empirical Core API. </p>
+
+<h3>What is the difference between Quill and Empirical Core?</h3>
+
+<p>Quill is a brand focused on providing writing activities for K12 English teachers. All of our educational activities are integrated into Empirical Core, and Quill provides a curated list of activities from Empirical Core for English teachers. Quill exists as a brand and content library, while Empirical Core is the core technical product. </p>
+
+<h3>What is the basic User Experience?</h3>
+
+<p>Admins integrate applications into the Empirical Core backend. Educators create activities for those applications and store them within Empirical Core. Teaches browse through our activities and assign activities to individual students. Students log in through their student portal, where they see every single activity that has been assigned to them.  The student then selects an activity and clicks on it. The application creates an ActivitySession, and the activity is loaded within an iframe. A student completes the activity, and when the student hits an endpoint, the student sees her results and is returned to the student portal. Students and teachers see data on their progress. </p>
+
+<p><em>See the complete user experience via our integration testing document</em></p>
+
+<p>Demo the student and teacher experiences with our sample log ins:</p>
+
+<blockquote>
+<p>Teacher Portal - Username: Teacher, Password: Demo
+Student Account - Username: Student, Password: Student</p>
+</blockquote>
+
+<h1>Activity Implementation</h1>
+
+<h3>What is an application?</h3>
+
+<p>An application is a program that provides a type of learning experience. For example, in the Passage Proofreading app students are given a special type of activity in which they </p>
+
+<h3>What is an activity?</h3>
+
+<p>An activity is a single, fixed length learning experience for a student. For example, many of our activities are ten minute experiences. In each activity there is a goal, and when that goal is competed, the user hits an end point where that activity is completed. Students see their results, and they are given a link back to their student portal. From the student portal students then select additional activities.</p>
+
+<h3>What is an ActivitySession?</h3>
+
+<p>When an activity is launched, (Empirical Core?) creates an ActivitySession. The Activity Session stores the user's progress. If a user quits out, the user can restart the activity via the ActivitySession.</p>
+
+<h3>Why are activities presented through an iFrame?</h3>
+
+<p>We present our activities through an iFrame to provide a single branded experience for our students and teachers. Our users only need to go to Quill.org, and they can then seamlessly access all of our activities. </p>
+
+<h3>Can an activity be connected to Empirical Core without being within an iframe?</h3>
+
+<p>Yes. Our activities are presented within an iFrame for the ease of use our K12 students. However, users can also  go to your domain, and log in using their Empirical Core id. We support log ins via OAuth. </p>
+
+<h1>API Design</h1>
+
+<h3>Where is the documentation for the API?</h3>
+
+<p>The documentation for the API is stored within a YAML file. Included in the YAML file are comments that describe each call. We use a script to extract that information and present it as a webpage here.</p>
+
+<h3>What data fields do you employ?</h3>
+
+<p><a href="http://docs.empirical.org/api-reference/">Please see this document for a complete overview of the data structure of our API and Empirical Core.</a></p>
+
+<h3>Universal Fields for all Activities</h3>
+
+<p><em>These fields apply to all activities.</em></p>
+
+<p><strong>Activity Name:</strong>The activity name provides not only a title to the activity, but also an identifier of the topic at hand. For example, the title "3.2.4 Capitalizing Letters in Titles" not only names the activity, but also describes the concept. </p>
+
+<p><strong>Description:</strong> The description for an activity details the goal of the activity. For example, write ten sentences using common, proper, and possessive nouns. </p>
+
+<p><strong>Instructions:</strong> The instructions describe what the student must do to complete the activity.</p>
+
+<p><strong>Status:</strong> When a student begins an activity it is given a status. <strong>This needs more info. How does this work?</strong></p>
+
+<p><strong>Concept Tag:</strong> As a future feature, we will tag individual events within an activity. These events will provide a level of insight into how the student is performing.</p>
+
+<h3>Activity Specific Variables</h3>
+
+<p><em>These fields are specific to a particular activity.</em></p>
+
+<p><strong>Body (Proofreading Passages):</strong> The body field contains the text of a particular passage. This body text contains all of the errors, seeded with our particular syntax. </p>
+
+<p><strong>Rule Question Order (Sentence Writing):</strong></p>
+
+<h3>How do you handle data that is not employed within pre-defined fields?</h3>
+
+<p>We handle data blobs through ______________.  Over time, we will build defined fields for particular data sets as needed. </p>
+
+<h1>User Experience - Student and Teacher Portals.</h1>
+
+<h3>What is the user experience?</h3>
+
+<p>To get an understanding of the user experience, we highly recommend that you walk through the entire user experience. One can walk through every step in our UX in under fifteen minutes, and this will give you a complete sense of our product. </p>
+
+<h3>Why does a classroom have an assigned activity?</h3>
+
+<p>An activity can either be in the state of assigned or unassigned. When an activity is assigned, it moves from an assigned to an unassigned state. </p>
+
+<p><strong>This is a bad feature. The problem is that once a teacher assigns a lesson to a group of students, the teacher cannot assign the lesson to another group of students. In the future, we should set up our system so that a copy of the activity is assigned to a group of students. This means that the activity can be assigned again to another group.</strong></p>
+
+<h3>Where is a student assigned activity?</h3>
+
+<h3>What is the many to many table between unit and classroom?</h3>
+
+<p>[Missing]. </p>
+
+<h3>Why do student only belong to one classroom?</h3>
+
+<p>At the moment we only have individual teachers using our platform. We will look at this feature later.</p>
+
+<h1>Activity Organization - Content Hierachy</h1>
+
+<h3>How are activities arranged within Empirical Core?</h3>
+
+<p>Activities are arranged into topics, and topics are arranged into sections. At the moment there is one section for each grade level (grade one, grade two, etc.). Each section has a number of topics. For example, the grade one section has the topic: 1.1c. Use Singular and Plural Nouns with Matching Verbs. This topic has  a number of activities, such as "Sentence Writing: Singular Nouns" and "Sentence Writing: Plural Nouns". </p>
+
+<h3>How does one assign a topic and section to an activity?</h3>
+
+<p>At the moment the topics and sections are assigned through a CMS restricted to admins. App developers will have their activities filed into Empirical Core via an admin.</p>
+
+<h3>How does a developer implement an edit to an activity?</h3>
+
+<p>There are two models for how content can be stored within a database. Under the independent database model an application controls its own database and implements its own edits. Under the Empirical Core database model activities are stored within Empirical Core and edited through our CMS.</p>
+
+<h3>Independent Database Model</h3>
+
+<p>Under this model, each application has its own database. Certain admins are given permission to edit the database through a GUI.  </p>
+
+<h3>Empirical Core Database Model: Under this model (not yet implemented), each activity is stored within a central Empirical Core database. When a student initiates an application's activity, Empirical Core pass over the activity's content to load within the application. In this model, an activity is implemented and</h3>
+
+<h3>Lesson Editor</h3>
+
+<p>As a note, in the future we will expose this interface so that anyone may edit a lesson. We will likely adopt a pull request model, where users can suggest edits, and approved edits are added to the database. This interface will be a separate interface, built on topp of our databases, and will pass data to the database via the Empirical Core API. </p>
+
+<h1>Glossary</h1>
+
+<h3>Empirical Core</h3>
+
+<p>Our platform for interactive activities. With Empirical Core teachers can seamlessly assign activities to students and view results. </p>
+
+<h3>Quill</h3>
+
+<p>A marketing brand of English Language Arts activities focused on the K12 market. Quill utilizes a curated list of Empirical Core applications and activities. </p>
+
+<h3>Application</h3>
+
+<p>An application is an independent program, with its own code base and learning experience. Applications are integrated into Empirical Core and also exist independently of Empirical Core.</p>
+
+<h3>Activity</h3>
+
+<p>An activity is a fixed length length learning experience. For example, each proofreading activity is a single passage that takes approximately 10 minutes to proofread. </p>
+
+<h3>Empirical Core Database Model</h3>
+
+<p>The Empirical Core database model means that the content of the activities are stored on the Empirical Core database, and they are loaded into the application when the user starts the application. This model is popular when a lesson has a pre-defined, fixed set of content. For example, if an activity has only ten words a prompt, all of that data can be pulled from the Empirical Core database.</p>
+
+<h3>Independent Database Model</h3>
+
+<p>The independent database model means that the content of the activities are stored in the application's own database. This model is popular when the activity provides randomized content. For example, if an activity provides a randomized question from a question bank, the data should be stored on its own application. </p>
+
+    </div>
+  </div>
+
+  <div class="large-4 columns">
+    <div id="sidebar">
+
+      <ul class="side-nav">
+        <li><strong>Code-Overview</strong></li>
+
+        
+          <li class="divider">
+
+          
+            <li><a href="../Empirical%20Core%20Overview/">
+              <span class="octicon octicon-file-text"></span>
+              Empirical Core Overview.md
+            </a></li>
+          
+        
+
+        
+
+        
+          <li class="divider">
+
+          <li><a href="https://www.github.com/empirical-org/Documentation/blob/master/Empirical-Core/Code-Overview/Empirical%20Core%20Overview.md">
+            <span class="octicon octicon-octoface"></span>
+            Edit on github
+          </a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

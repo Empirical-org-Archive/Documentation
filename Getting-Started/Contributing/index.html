@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>A Brand New nanoc Site - </title>
+  <link rel="stylesheet" href="../../stylesheet.css">
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.7.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="top-nav">
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="../../">Compass Documentation</a>
+      <div class="right nav-links">
+        <a href="../../">Documentation</a>
+        <a href="../../api-reference">API Reference</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="breadcrumbs">
+      
+        <li><a href="../../">Docs</a></li>
+      
+        <li><a href="..">Getting-Started</a></li>
+      
+        <li class="current"><a href="">Contributing.md</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 columns">
+    <div id="main">
+      <h1>Contributing Guidelines</h1>
+
+<p>note: If you are using docker and fig, you will have to preface commands such as rake, rails, bundle, etc with <code>fig compass run &lt;cmd&gt;</code></p>
+
+<h2>Check the Issue Queue</h2>
+
+<p>Check our <a href="https://github.com/empirical-org/empirical-core/issues?state=open">Github issue queue</a> for ideas on how to help.</p>
+
+<h2>Pull Request Guidelines</h2>
+
+<p><em>the text below is copied from https://github.com/thoughtbot/factory<em>girl</em>rails/blob/master/CONTRIBUTING.md.</em></p>
+
+<p>We love pull requests. Here's a quick guide:</p>
+
+<ol>
+<li>
+<p><strong>Fork the repo.</strong></p>
+
+<p>If you followed the instructions in the 
+<a href="../Install/Install%20Guide.md">Install Guide</a>
+you will probably want to modify the submodules to point to your new fork(s). One option would be:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git rename origin upstream
+git remote add origin git@your-fork
+</code></pre></div>
+</li>
+<li>
+<p><strong>Run the tests.</strong> </p>
+
+<p>We only take pull requests with passing tests, and it's great
+to know that you have a clean slate: <code>bundle &amp;&amp; rake</code></p>
+</li>
+<li>
+<p><strong>Add a test for your change.</strong></p>
+
+<p>Only refactoring and documentation changes
+require no new tests. If you are adding functionality or fixing a bug, we need
+a test!</p>
+
+<p>The only exception to this would be some frontend changes. Since we don't currently
+use a javascript testing framework or an acceptance testing framework, some frontend 
+changes may not require any tests (please err on the side of testing, though).</p>
+</li>
+<li><p><strong>Make the test pass.</strong></p></li>
+<li>
+<p><strong>Push to your fork and submit a pull request.</strong></p>
+
+<p>Please mention any relevant issue, but don't worry about any naming convention for 
+the branches. As long as the pull request is adequately informative that should be 
+good enough.</p>
+</li>
+</ol>
+
+<p>At this point you're waiting on us. We like to at least comment on, if not accept, pull requests within three business days (and, typically, one business day). Quinn and Josh will review pull requests and provide feedback on code quality. We may suggest some changes or improvements or alternatives. Large commits will be reviewed in a pair programming session.</p>
+
+<h2>Ruby Code Guidelines</h2>
+
+<p><strong>Project Guidelines</strong>
+* Use SLIM rather than HAML. 
+* Write JavaScript, not CoffeeScript.
+* Always write tests (the test suite is really bare right now) and nothing is to be merged without tests.
+* Make pull requests on the Master branch. 
+* Use a minimalist approach to using gems like devise, FactoryGirl, etc, unless they're absolutely needed.</p>
+
+<p><strong>Ruby Guidelines</strong>
+* Make sure your code follows <a href="https://github.com/styleguide/ruby">Ruby</a> and project conventions.
+* Make sure you don't have any IDE / platform specific files committed. i.e.
+    <code>.DS_Store</code>, <code>.idea</code>, <code>.project</code> (consider adding these to a <a href="https://help.github.com/articles/ignoring-files#global-gitignore">global gitignore</a>).
+* Before commiting, run <code>rake</code>, make sure all tests pass.
+* Use Rails idioms and helpers
+* Include tests that fail without your code, and pass with it
+* Update the documentation, the surrounding one, examples elsewhere, guides, whatever is affected by your contribution</p>
+
+<p><strong>Syntax:</strong>
+* Two spaces, no tabs.
+* No trailing whitespace. Blank lines should not have any space.
+* Prefer &amp;&amp;/|| over and/or.
+* MyClass.my<em>method(my</em>arg) not my<em>method( my</em>arg ) or my<em>method my</em>arg.
+* a = b and not a=b.
+* Follow the conventions you see used in the source already.</p>
+
+<h2>Commit Message Guidelines</h2>
+
+<p><a href="http://git-scm.com/book/ch5-2.html#Commit-Guidelines">Follow these best practices from Git.</a></p>
+
+<h2>Testing guidelines</h2>
+
+<p>All new features should have some form of integration testing. If any of the units are complex enough to merit it a unit test can be written for them as well (but not necessary). No acceptance testing framework is currently being used.</p>
+
+<h2>Testing on Staging</h2>
+
+<p>The code reviewer will deploy each test to staging, and the feature will be tested on staging before being released. </p>
+
+<h2>Code Deployement</h2>
+
+<p>Deploy production and staging:</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">git remote add heroku-production git@github.com:empirical-grammar.git
+git remote add heroku-staging    git@github.com:empirical-grammar-staging.git
+
+<span class="c">## production:</span>
+git push heroku-production REF:master
+
+<span class="c">## staging:</span>
+git push heroku-staging REF:master
+</code></pre></div>
+<p>This command deploys the given ref (replace <code>REF</code> with <code>master</code>, <code>branch-name</code>, etc) to the specified environment.</p>
+
+<h2>Provisioning</h2>
+
+<p>Servers are manually provisioned at this time.</p>
+
+    </div>
+  </div>
+
+  <div class="large-4 columns">
+    <div id="sidebar">
+
+      <ul class="side-nav">
+        <li><strong>Getting-Started</strong></li>
+
+        
+          <li class="divider">
+
+          
+            <li><a href="../Common%20Questions/">
+              <span class="octicon octicon-file-text"></span>
+              Common Questions.md
+            </a></li>
+          
+            <li><a href="./">
+              <span class="octicon octicon-file-text"></span>
+              Contributing.md
+            </a></li>
+          
+            <li><a href="../Developer%20FAQ/">
+              <span class="octicon octicon-file-text"></span>
+              Developer FAQ.md
+            </a></li>
+          
+            <li><a href="../Open%20Source%20Volunteer%20Projects/">
+              <span class="octicon octicon-file-text"></span>
+              Open Source Volunteer Projects.md
+            </a></li>
+          
+            <li><a href="../Pull%20Request%20Workflow/">
+              <span class="octicon octicon-file-text"></span>
+              Pull Request Workflow.md
+            </a></li>
+          
+            <li><a href="../README/">
+              <span class="octicon octicon-file-text"></span>
+              README.md
+            </a></li>
+          
+            <li><a href="../RFF%20Data%20Science/">
+              <span class="octicon octicon-file-text"></span>
+              RFF Data Science.md
+            </a></li>
+          
+        
+
+        
+          <li class="divider">
+
+          
+            <li><a href="../../Events/">
+              <span class="octicon octicon-file-directory"></span>
+              Events
+            </a></li>
+          
+            <li><a href="../../Install/">
+              <span class="octicon octicon-file-directory"></span>
+              Install
+            </a></li>
+          
+        
+
+        
+          <li class="divider">
+
+          <li><a href="https://www.github.com/empirical-org/Documentation/blob/master/Getting-Started/Contributing.md">
+            <span class="octicon octicon-octoface"></span>
+            Edit on github
+          </a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

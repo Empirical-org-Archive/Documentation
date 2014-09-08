@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>A Brand New nanoc Site - </title>
+  <link rel="stylesheet" href="../../stylesheet.css">
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.7.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="top-nav">
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="../../">Compass Documentation</a>
+      <div class="right nav-links">
+        <a href="../../">Documentation</a>
+        <a href="../../api-reference">API Reference</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="breadcrumbs">
+      
+        <li><a href="../../">Docs</a></li>
+      
+        <li><a href="..">Getting-Started</a></li>
+      
+        <li class="current"><a href="">Developer FAQ.md</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 columns">
+    <div id="main">
+      <h1>Developer's FAQ</h1>
+
+<p><em>This document outlines all of the questions we have recieved from developer. These answers have been incorporated into our documentation, and this doc serves as a reference point for those answers.</em> </p>
+
+<h1>Contributing</h1>
+
+<h4>Do we only do back end testing or front end too?</h4>
+
+<p>No frontend or acceptance testing framework is currently implemented so this is not necessary. </p>
+
+<h4>Do we need to use feature branches or branches for issues? If so, is there a naming convention for this?</h4>
+
+<p>1 pull request per issue, no need to name the branch anything in particular (no one else will use your branch so it doesn’t matter). </p>
+
+<h4>Should I replace the URL with my forked repo in the submodules in my development environment? How do you recommend I setup my development environment best to work with the project?</h4>
+
+<p>you could do this:
+git rename origin upstream
+git remote add origin git@your-fork</p>
+
+<h1>API Design</h1>
+
+<h4>How do lessons fit in with Empirical Core? How do the two applications communicate?</h4>
+
+<p><a href="https://github.com/empirical-org/Documentation/blob/master/Empirical-Core/API-Design/API%20Docs.md">See this doc</a>
+- lesson data is stored in Empirical Core and is parsed by quill
+- quill queries api through that data
+- lesson passes id used to look up that information</p>
+
+<h1>Outstanding Questions</h1>
+
+<p><em>Questions that need to be answered.</em></p>
+
+<p>How is the data stored in the honey cms? same DB</p>
+
+    </div>
+  </div>
+
+  <div class="large-4 columns">
+    <div id="sidebar">
+
+      <ul class="side-nav">
+        <li><strong>Getting-Started</strong></li>
+
+        
+          <li class="divider">
+
+          
+            <li><a href="../Common%20Questions/">
+              <span class="octicon octicon-file-text"></span>
+              Common Questions.md
+            </a></li>
+          
+            <li><a href="../Contributing/">
+              <span class="octicon octicon-file-text"></span>
+              Contributing.md
+            </a></li>
+          
+            <li><a href="./">
+              <span class="octicon octicon-file-text"></span>
+              Developer FAQ.md
+            </a></li>
+          
+            <li><a href="../Open%20Source%20Volunteer%20Projects/">
+              <span class="octicon octicon-file-text"></span>
+              Open Source Volunteer Projects.md
+            </a></li>
+          
+            <li><a href="../Pull%20Request%20Workflow/">
+              <span class="octicon octicon-file-text"></span>
+              Pull Request Workflow.md
+            </a></li>
+          
+            <li><a href="../README/">
+              <span class="octicon octicon-file-text"></span>
+              README.md
+            </a></li>
+          
+            <li><a href="../RFF%20Data%20Science/">
+              <span class="octicon octicon-file-text"></span>
+              RFF Data Science.md
+            </a></li>
+          
+        
+
+        
+          <li class="divider">
+
+          
+            <li><a href="../../Events/">
+              <span class="octicon octicon-file-directory"></span>
+              Events
+            </a></li>
+          
+            <li><a href="../../Install/">
+              <span class="octicon octicon-file-directory"></span>
+              Install
+            </a></li>
+          
+        
+
+        
+          <li class="divider">
+
+          <li><a href="https://www.github.com/empirical-org/Documentation/blob/master/Getting-Started/Developer%20FAQ.md">
+            <span class="octicon octicon-octoface"></span>
+            Edit on github
+          </a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

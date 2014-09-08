@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>A Brand New nanoc Site - </title>
+  <link rel="stylesheet" href="../../../stylesheet.css">
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.7.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="top-nav">
+  <div class="row">
+    <div class="large-12 columns">
+      <a href="../../../">Compass Documentation</a>
+      <div class="right nav-links">
+        <a href="../../../">Documentation</a>
+        <a href="../../../api-reference">API Reference</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="breadcrumbs">
+      
+        <li><a href="../../../">Docs</a></li>
+      
+        <li><a href="../..">Getting-Started</a></li>
+      
+        <li><a href="../../../Install">Install</a></li>
+      
+        <li class="current"><a href="">Instant Hacking - No Install WebIDE.md</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 columns">
+    <div id="main">
+      <h1>Instant Code Development with Codio</h1>
+
+<p><em>Installing Rails and Postgres can result in troubleshooting issues. Codio.com provides a cloud based enviornment. Empirical Core is pre-installed on the Codio machine with Rails and Postgres.</em></p>
+
+<h3>1. Log into Codio.com</h3>
+
+<h3>2. Go to the Empirical box</h3>
+
+<p>In a new tab, go to this address to fork the project: https://codio.com/empirical-org/Empirical-Core-Sandbox</p>
+
+<h3>3. Fork the project</h3>
+
+<p>Click on the project, then fork. You can keep the name. </p>
+
+<p><strong>Important! Make sure to select the third option "Clone both the project and its box."</strong></p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/3667179/4159841/33ee7d22-34ab-11e4-94dd-964238810ba0.png" alt="screen shot 2014-09-04 at 8 36 43 pm"></p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/3667179/4159868/e49285ce-34ab-11e4-8886-e1388ec2f524.png" alt="screen shot 2014-09-04 at 8 46 41 pm"></p>
+
+<h3>4. Open the Server Terminal</h3>
+
+<p>Click on the "Rails S" button. Wait till it says "Listening on tcp…"</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/3667179/4159873/f24dee10-34ab-11e4-8da1-b78423ef54c6.png" alt="screen shot 2014-09-04 at 8 48 55 pm"></p>
+
+<h3>5. Launch the local server.</h3>
+
+<p>Click project index button, and then select from the drop down "Box URL"</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/3667179/4159886/2e34aea0-34ac-11e4-8c27-8cf529ca833a.png" alt="screen shot 2014-09-04 at 8 55 16 pm"></p>
+
+<h3>6. Share your code!</h3>
+
+<p>The generated url can be shared with anyone online. Make changes to the code and then share your changes with others. For example share the url: http://mango-dance.codio.io:3000/</p>
+
+<h1>Part 2. Creating a Pull Request with Codio</h1>
+
+<h3>1. Fork the Project</h3>
+
+<p>In a new tab, fork the project from here: https://github.com/empirical-org/Empirical-Core/</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/3667179/4159941/9b10046a-34ad-11e4-9027-98e6e63ed163.png" alt="screen shot 2014-09-04 at 9 05 01 pm"></p>
+
+<h3>2. Copy the Git URL</h3>
+
+<p><img src="https://cloud.githubusercontent.com/assets/3667179/4159965/e21864d8-34ad-11e4-826d-a3004a1e59c0.png" alt="screen shot 2014-09-04 at 9 05 41 pm"></p>
+
+<h3>3. Open the Terminal</h3>
+
+<p>Go back to your codio tab, and press tools &gt; terminal.</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/3667179/4159974/1707a2b2-34ae-11e4-8b1b-c80e0debc366.png" alt="screen shot 2014-09-04 at 9 06 22 pm"></p>
+
+<h3>4. Add the Project</h3>
+
+<p>From the terminal line, input the following line you've copied and pasted. 
+<code>
+git remote add emp-sandbox https://github.com/[YOUR URL]/empirical-core.git   
+</code>
+Your project is now called emp-sandbox. </p>
+
+<h3>5. Check out the Branch</h3>
+
+<p>You are now going to create your own branch of the code. 
+<code>
+git checkout -b [YOUR NAME]
+</code>
+Your Name is going to be the name for the branch, e.g. Peter-Gault. </p>
+
+<h3>6. Hack and Push</h3>
+
+<p>Now that you’re in your branch, you can make your changes and do your usual git add and git commit commands below. When you’re satisfied, you can now push to your repo.
+<code>
+git add -A
+git commit -m “your commit message”
+git push emp-sandbox [your branch name]
+</code></p>
+
+<h3>7. Submit your Pull Request at Github</h3>
+
+<p>Go to your Github Empirical-Core repo and make your pull request to us by clicking the button “Compare and pull request."</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/3667179/4160019/5b7defe0-34af-11e4-83d7-938e21f81de5.png" alt="7187984_228105207_14899283"></p>
+
+<h3>8. Change the Branch you are Submitting to.</h3>
+
+<p>Your are going to merge your branch with the "emp-sandbox" branch. Click on Edit at the top right to change the Base you are making your pull request to from the “develop” branch to the “emp-sandbox” branch. </p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/3667179/4160038/0eae3cf0-34b0-11e4-8a57-35d8c41353c9.png" alt="7187984_228105481_14899311"></p>
+
+<h3>9. Write a Commit Message</h3>
+
+<p>Write your commit message specifying the changes you made. </p>
+
+<p><a href="http://ablogaboutcode.com/2011/03/23/proper-git-commit-messages-and-an-elegant-git-history/">Here is a great guide for writing proper commit messages.</a></p>
+
+<h3>10. Thanks! We'll review your Pull Request</h3>
+
+<p>We'll contact you with you questions. Feel free to reach us on Gitter or our mailing list. </p>
+
+    </div>
+  </div>
+
+  <div class="large-4 columns">
+    <div id="sidebar">
+
+      <ul class="side-nav">
+        <li><strong>Install</strong></li>
+
+        
+          <li class="divider">
+
+          
+            <li><a href="./">
+              <span class="octicon octicon-file-text"></span>
+              Instant Hacking - No Install WebIDE.md
+            </a></li>
+          
+            <li><a href="../Manual%20Install%20Linux/">
+              <span class="octicon octicon-file-text"></span>
+              Manual Install Linux.md
+            </a></li>
+          
+            <li><a href="../Manual%20Install%20OSX/">
+              <span class="octicon octicon-file-text"></span>
+              Manual Install OSX.md
+            </a></li>
+          
+            <li><a href="../Readme/">
+              <span class="octicon octicon-file-text"></span>
+              Readme.md
+            </a></li>
+          
+        
+
+        
+          <li class="divider">
+
+          
+            <li><a href="../../../Archive/">
+              <span class="octicon octicon-file-directory"></span>
+              Archive
+            </a></li>
+          
+        
+
+        
+          <li class="divider">
+
+          <li><a href="https://www.github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Instant%20Hacking%20-%20No%20Install%20WebIDE.md">
+            <span class="octicon octicon-octoface"></span>
+            Edit on github
+          </a></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
