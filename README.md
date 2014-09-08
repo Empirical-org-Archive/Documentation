@@ -22,7 +22,9 @@
 *This section links to all of the tools we use for each app.*
 
 **Communication:** [Slack,](https://empirical-core.slack.com) [Mailing List](https://groups.google.com/forum/#!forum/empirical-core)
-**Collaboration: [Shared Google Drive Folder,](https://drive.google.com/a/quill.org/#folders/0BxnurkJj9VglWERCaXI2S2xGWms) [Team Viewer Screen Share](http://www.teamviewer.com/en/index.aspx)
+
+**Collaboration:** [Shared Google Drive Folder,](https://drive.google.com/a/quill.org/#folders/0BxnurkJj9VglWERCaXI2S2xGWms) [Team Viewer Screen Share](http://www.teamviewer.com/en/index.aspx)
+
 **Code Monitor:** [Librato Server Monitor](https://metrics.librato.com/dashboards/22363)
 
 
