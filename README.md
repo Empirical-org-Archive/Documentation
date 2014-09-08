@@ -9,7 +9,7 @@
 ## Key Documentation 
 
 - **Glossary of Terms:** [Every term we've created for our site.](https://docs.google.com/a/quill.org/document/d/1J-eYeMsXs0b3h1WASil_ymDMMb759TUy3Fde8oqPjPw/edit#)
-- **Code High Level Overviews:** [Empirical Core Overview,](http://docs.empirical.org/Empirical-Core/Code-Overview/Empirical%20Core%20Overview/) [API Overview,](http://docs.empirical.org/Empirical-Core/API-Design/API%20Docs/) [API FAQ](http://docs.empirical.org/Empirical-Core/API-Design/API%20Docs%20FAQ/)
+- **Code High Level Overviews:** [(1) Empirical Core Overview,](http://docs.empirical.org/Empirical-Core/Code-Overview/Empirical%20Core%20Overview/) [(2) API Overview,](http://docs.empirical.org/Empirical-Core/API-Design/API%20Docs/) [(3) API FAQ](http://docs.empirical.org/Empirical-Core/API-Design/API%20Docs%20FAQ/)
 - **API Reference:** [Our API reference guide.](http://docs.empirical.org/api-reference/)
 
 
