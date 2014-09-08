@@ -9,8 +9,9 @@
 
 *If you are writing code please read these docs.*
 
-- [Install Process](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Install/Install%20Guide.md)
+- [Install Process](https://github.com/empirical-org/Documentation/tree/master/Getting-Started/Install)
 - [Empirical Core High Level Overview](https://github.com/empirical-org/Documentation/blob/master/Empirical-Core/Code-Overview/Empirical%20Core%20Overview.md) Empirical Core is our LMS for assigning activities and viewing results. 
+- [Glossary of Terms](https://docs.google.com/a/quill.org/document/d/1J-eYeMsXs0b3h1WASil_ymDMMb759TUy3Fde8oqPjPw/edit#)
 - [API Design](https://github.com/empirical-org/Documentation/blob/master/Empirical-Core/API-Design/API%20Docs.md) This doc explains how Empirical Core communicates with our applications. 
 - [API Reference](http://docs.empirical.org/api-reference/) A guide for API calls. 
 - [Contributing Guidelines](https://github.com/empirical-org/Documentation/blob/master/Getting-Started/Contributing.md) Our open source code development workflow. 
