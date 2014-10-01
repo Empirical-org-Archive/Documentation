@@ -56,7 +56,7 @@ Go back to your codio tab, and press tools > terminal.
 
 From the terminal line, input the following line you've copied and pasted. 
 ```
-git remote add emp-sandbox https://github.com/[YOUR URL]/empirical-core.git   
+git remote add emp-sandbox https://github.com/[YOUR USERNAME]/empirical-core.git   
 ```
 Your project is now called emp-sandbox. 
 
