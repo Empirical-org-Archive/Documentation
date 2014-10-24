@@ -26,12 +26,12 @@ If you want a simple guide to install Empirical Core, then you've come to the ri
 7. Create a config/database.yml file using config/database.yml.example as an example.
 One way to do this is to use the terminal command:
 
-cp config/database.yml.example config/database.yml
+ ```cp config/database.yml.example config/database.yml```
 
 8. Create a .env file using .env-sample as an example.
-Again, you can do this using the terminal command: 
+Again, you can do this using the terminal command:
 
-cp .env-sample .env
+ ```cp .env-sample .env```
 
 9. Set up your database with `bundle exec rake db:setup`.
 
