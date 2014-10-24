@@ -23,9 +23,17 @@ If you want a simple guide to install Empirical Core, then you've come to the ri
 
 6. Install the bundle with `bundle install`.
 
-7. Set up your database with `bundle exec rake db:setup`.
+7. Create a config/database.yml file using config/database.yml.example as an example.
+One way to do this is to use the terminal command:
+cp config/database.yml.example config/database.yml
 
-8. Run the server with `bundle exec rails s`.
+8. Create a /.env file using /.env-sample as an example.
+Again, you can do this using the terminal command: 
+cp .env-sample .env
+
+9. Set up your database with `bundle exec rake db:setup`.
+
+10. Run the server with `bundle exec rails s`.
 
 Now open your browser and navigate to localhost:3000 and you should see Empirical-Core pull up properly! When you're done with the server, use Ctrl-C to break it and return to your commandline.
 
