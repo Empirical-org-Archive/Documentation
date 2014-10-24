@@ -77,7 +77,10 @@
             username: my_name
             password: my_pass
 
-14. Start PostgreSQL and create your postgresql user. Test your login. Note
+14. Likewise create a .env file from the .env-sample example. 
+ ```cp .sample-env .env
+
+15. Start PostgreSQL and create your postgresql user. Test your login. Note
     that $USER and the password you enter should match what you put in the
     database.yml file above.
 
@@ -94,12 +97,12 @@
         psql
         matthew=#> \q
 
-15. Build the database.
+16. Build the database.
 
         rake db:create
         rake db:migrate
 
-16. Run the server and make sure it works.
+17. Run the server and make sure it works.
 
         rails server
         curl localhost:3000
