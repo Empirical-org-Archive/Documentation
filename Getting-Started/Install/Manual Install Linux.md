@@ -78,7 +78,8 @@
             password: my_pass
 
 14. Likewise create a .env file from the .env-sample example. 
- ```cp .sample-env .env
+
+        cp .sample-env .env
 
 15. Start PostgreSQL and create your postgresql user. Test your login. Note
     that $USER and the password you enter should match what you put in the
