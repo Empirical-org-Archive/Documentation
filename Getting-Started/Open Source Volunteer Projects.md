@@ -18,4 +18,4 @@ Starter issues are good starting point issues. They are generally smaller, self-
 
 ## Bug reports
 
-Any bug we are looking for help with! Check out the "Bug" label for issues that need worked on immidiately and let us know if you have any questions, we're happy to help. 
+Any bug we are looking for help with! Check out the "Bug" label for issues that need worked on immediately and let us know if you have any questions, we're happy to help. 
